@@ -26,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="842.02898550724649" y="137.94642857142856"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="PmO-2f-u2J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cp9-GJ-3VT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Adc-Ia-Cls"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="Adc-Ia-Cls"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e2R-aD-zFg">
