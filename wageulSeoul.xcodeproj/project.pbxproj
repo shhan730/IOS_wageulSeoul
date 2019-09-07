@@ -10,6 +10,7 @@
 		90401A602322EDAA008825B0 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90401A5F2322EDAA008825B0 /* UserInfo.storyboard */; };
 		90401A622322EE37008825B0 /* PolicyStatus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90401A612322EE37008825B0 /* PolicyStatus.storyboard */; };
 		90401A642322F0DB008825B0 /* PolicyProposals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90401A632322F0DB008825B0 /* PolicyProposals.storyboard */; };
+		90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A682324229C008825B0 /* PolicyStatusController.swift */; };
 		905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */; };
 		905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905877D3231FDDBC00B8E3D1 /* Assets.xcassets */; };
 		905877D7231FDDBC00B8E3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		90401A5F2322EDAA008825B0 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		90401A612322EE37008825B0 /* PolicyStatus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PolicyStatus.storyboard; sourceTree = "<group>"; };
 		90401A632322F0DB008825B0 /* PolicyProposals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PolicyProposals.storyboard; sourceTree = "<group>"; };
+		90401A682324229C008825B0 /* PolicyStatusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyStatusController.swift; sourceTree = "<group>"; };
 		905877C9231FDDBB00B8E3D1 /* wageulSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wageulSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905877D3231FDDBC00B8E3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90401A5E2322ED4D008825B0 /* StoryBoards */ = {
+		90401A5E2322ED4D008825B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				90817C762321240D0024C507 /* Main.storyboard */,
@@ -49,7 +51,23 @@
 				90401A632322F0DB008825B0 /* PolicyProposals.storyboard */,
 				90401A5F2322EDAA008825B0 /* UserInfo.storyboard */,
 			);
-			path = StoryBoards;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90401A6623242196008825B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90817C722321237B0024C507 /* MainViewController.swift */,
+				90401A682324229C008825B0 /* PolicyStatusController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		90401A6723242202008825B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		905877C0231FDDBB00B8E3D1 = {
@@ -71,10 +89,11 @@
 		905877CB231FDDBB00B8E3D1 /* wageulSeoul */ = {
 			isa = PBXGroup;
 			children = (
-				90401A5E2322ED4D008825B0 /* StoryBoards */,
+				90401A6723242202008825B0 /* Models */,
+				90401A5E2322ED4D008825B0 /* Views */,
+				90401A6623242196008825B0 /* Controllers */,
 				905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */,
 				905877D3231FDDBC00B8E3D1 /* Assets.xcassets */,
-				90817C722321237B0024C507 /* MainViewController.swift */,
 				905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */,
 				905877D8231FDDBC00B8E3D1 /* Info.plist */,
 			);
@@ -156,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */,
+				90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */,
 				90817C732321237B0024C507 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
