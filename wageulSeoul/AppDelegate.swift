@@ -12,12 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let id = IDVerificationInfo()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Tab Bar Color Setting
         UITabBar.appearance().tintColor = UIColor.init(displayP3Red: 240.0/255.0, green: 143.0/255.0, blue: 79.0/255.0, alpha: 1.0)
-        sleep(1)
+        
+        // window 제작
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Switching Root View
+        if id.isAuthorized{
+            switchToMainUI()
+        }else{
+            switchToIDVerificationUI()
+        }
+        
+        // Show Window
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -41,6 +58,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func switchToMainUI() {
+        // StoryBoard Instance
+        let tutorialStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // View Controller Instance
+        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "Main")
+        
+        // Set Root View Controller of Window
+        self.window?.rootViewController = viewController
+    }
+    
+    func switchToIDVerificationUI() {
+        // StoryBoard Instance
+        let tutorialStoryboard = UIStoryboard(name: "IDVerification", bundle: nil)
+        
+        // View Controller Instance
+        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "IDVerificatonStart")
+        
+        // Set Root View Controller of Window
+        self.window?.rootViewController = viewController
     }
 
 

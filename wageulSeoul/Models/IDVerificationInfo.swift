@@ -10,7 +10,7 @@ import Foundation
 
 struct IDVerificationInfo {
     
-    var isAuthrized = false
+    var isAuthorized = false
     
     
     

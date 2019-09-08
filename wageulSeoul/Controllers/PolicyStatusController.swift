@@ -11,11 +11,15 @@ import UIKit
 
 class PolicyStatusController: UIViewController {
     
+    let IDInfo = IDVerificationInfo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        
     }
+    
+    
     
     
     /*
