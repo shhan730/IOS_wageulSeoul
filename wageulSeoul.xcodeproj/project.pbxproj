@@ -71,7 +71,6 @@
 				90401A6A23242502008825B0 /* PolicyProposalsController.swift */,
 				90401A6C23242537008825B0 /* UserInfoController.swift */,
 				90401A7023243E0D008825B0 /* IDVerificationController.swift */,
-				90401A7423264261008825B0 /* Supporting Fiiles */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				905877CB231FDDBB00B8E3D1 /* wageulSeoul */,
-				905877CA231FDDBB00B8E3D1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +106,7 @@
 				905877C9231FDDBB00B8E3D1 /* wageulSeoul.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		905877CB231FDDBB00B8E3D1 /* wageulSeoul */ = {
@@ -116,6 +115,8 @@
 				90401A6723242202008825B0 /* Models */,
 				90401A5E2322ED4D008825B0 /* Views */,
 				90401A6623242196008825B0 /* Controllers */,
+				90401A7423264261008825B0 /* Supporting Fiiles */,
+				905877CA231FDDBB00B8E3D1 /* Products */,
 			);
 			path = wageulSeoul;
 			sourceTree = "<group>";
