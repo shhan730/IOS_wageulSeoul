@@ -18,23 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIe-Gw-zb8">
-                                <rect key="frame" x="159" y="297" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc2-KE-0UN">
-                                <rect key="frame" x="184" y="594" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="dg3-pk-4dP" kind="show" id="JcS-Ku-LTj"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="구성 요소 11 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-Tc-av4">
+                                <rect key="frame" x="114" y="169" width="186" height="44"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YqC-Tc-av4" firstAttribute="top" secondItem="JrI-nD-IOh" secondAttribute="top" constant="81" id="8wO-aa-Ykf"/>
+                            <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="YqC-Tc-av4" secondAttribute="trailing" constant="114" id="M0H-yS-efF"/>
+                            <constraint firstItem="YqC-Tc-av4" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="114" id="Ud9-yE-HIW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JrI-nD-IOh"/>
                     </view>
                     <navigationItem key="navigationItem" id="KSW-CP-Fyy"/>
@@ -42,21 +35,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aL6-PD-cof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="145.98214285714286"/>
-        </scene>
-        <!--Verification Controller-->
-        <scene sceneID="8Ey-Rn-Ghl">
-            <objects>
-                <viewController id="dg3-pk-4dP" customClass="IDVerificationController" customModule="wageulSeoul" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ney-5H-5G7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="etc-ei-idp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFb-NL-H2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1642" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5yg-7n-wRF">
@@ -77,4 +55,7 @@
             <point key="canvasLocation" x="151" y="146"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="구성 요소 11 – 1" width="146" height="44"/>
+    </resources>
 </document>

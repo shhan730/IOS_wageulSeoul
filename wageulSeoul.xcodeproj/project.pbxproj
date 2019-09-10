@@ -16,6 +16,8 @@
 		90401A6F23243DA9008825B0 /* IDVerification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90401A6E23243DA9008825B0 /* IDVerification.storyboard */; };
 		90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A7023243E0D008825B0 /* IDVerificationController.swift */; };
 		90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A7223243F19008825B0 /* IDVerificationInfo.swift */; };
+		90401A852327BF89008825B0 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */; };
+		90401A862327BF89008825B0 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */; };
 		905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */; };
 		905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905877D3231FDDBC00B8E3D1 /* Assets.xcassets */; };
 		905877D7231FDDBC00B8E3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */; };
@@ -32,6 +34,8 @@
 		90401A6E23243DA9008825B0 /* IDVerification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IDVerification.storyboard; sourceTree = "<group>"; };
 		90401A7023243E0D008825B0 /* IDVerificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDVerificationController.swift; sourceTree = "<group>"; };
 		90401A7223243F19008825B0 /* IDVerificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDVerificationInfo.swift; sourceTree = "<group>"; };
+		90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		905877C9231FDDBB00B8E3D1 /* wageulSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wageulSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905877D3231FDDBC00B8E3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 			path = "Supporting Fiiles";
 			sourceTree = "<group>";
 		};
+		90401A872327BF98008825B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */,
+				90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		905877C0231FDDBB00B8E3D1 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		905877CB231FDDBB00B8E3D1 /* wageulSeoul */ = {
 			isa = PBXGroup;
 			children = (
+				90401A872327BF98008825B0 /* Fonts */,
 				90401A6723242202008825B0 /* Models */,
 				90401A5E2322ED4D008825B0 /* Views */,
 				90401A6623242196008825B0 /* Controllers */,
@@ -186,6 +200,8 @@
 				90401A6F23243DA9008825B0 /* IDVerification.storyboard in Resources */,
 				905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */,
 				90401A622322EE37008825B0 /* PolicyStatus.storyboard in Resources */,
+				90401A852327BF89008825B0 /* NotoSansCJKkr-Medium.otf in Resources */,
+				90401A862327BF89008825B0 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LY87Q8728H;
-				INFOPLIST_FILE = wageulSeoul/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/wageulSeoul/Supporting Fiiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LY87Q8728H;
-				INFOPLIST_FILE = wageulSeoul/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/wageulSeoul/Supporting Fiiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

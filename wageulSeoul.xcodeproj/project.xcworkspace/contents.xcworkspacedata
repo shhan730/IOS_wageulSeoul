@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:wageulSeoul.xcodeproj">
+      location = "group:../wageulSeoul/NotoSansCJKkr-hinted">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
