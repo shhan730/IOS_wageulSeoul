@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Bold.otf">
+            <string>NotoSansCJKkr-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Verification Controller-->
         <scene sceneID="0V7-Kd-auQ">
@@ -19,14 +24,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="구성 요소 11 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-Tc-av4">
-                                <rect key="frame" x="114" y="169" width="186" height="44"/>
+                                <rect key="frame" x="114" y="125" width="186" height="44"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울시 정책제안 와글와글" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEm-SE-nzm">
+                                <rect key="frame" x="100" y="662" width="214" height="24"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YqC-Tc-av4" firstAttribute="top" secondItem="JrI-nD-IOh" secondAttribute="top" constant="81" id="8wO-aa-Ykf"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="YqC-Tc-av4" secondAttribute="trailing" constant="114" id="M0H-yS-efF"/>
                             <constraint firstItem="YqC-Tc-av4" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="114" id="Ud9-yE-HIW"/>
+                            <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="FEm-SE-nzm" secondAttribute="trailing" constant="100" id="VZX-A5-Aze"/>
+                            <constraint firstItem="JrI-nD-IOh" firstAttribute="bottom" secondItem="FEm-SE-nzm" secondAttribute="bottom" constant="176" id="Vbh-AB-L8Y"/>
+                            <constraint firstItem="FEm-SE-nzm" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="100" id="tov-W3-OgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JrI-nD-IOh"/>
                     </view>
@@ -39,10 +53,9 @@
         <!--Navigation Controller-->
         <scene sceneID="5yg-7n-wRF">
             <objects>
-                <navigationController storyboardIdentifier="IDVerificatonStart" automaticallyAdjustsScrollViewInsets="NO" id="dOv-xe-b7r" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="IDVerificatonStart" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dOv-xe-b7r" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="At3-dJ-alL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
