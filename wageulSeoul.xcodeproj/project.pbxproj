@@ -21,6 +21,7 @@
 		905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */; };
 		905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905877D3231FDDBC00B8E3D1 /* Assets.xcassets */; };
 		905877D7231FDDBC00B8E3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */; };
+		90652293232A063B006A7502 /* NotoSansMonoCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90652292232A063B006A7502 /* NotoSansMonoCJKkr-Regular.otf */; };
 		90817C772321240D0024C507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90817C762321240D0024C507 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		905877D3231FDDBC00B8E3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905877D6231FDDBC00B8E3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		905877D8231FDDBC00B8E3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90652292232A063B006A7502 /* NotoSansMonoCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		90817C762321240D0024C507 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		90401A872327BF98008825B0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				90652292232A063B006A7502 /* NotoSansMonoCJKkr-Regular.otf */,
 				90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */,
 				90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */,
 			);
@@ -197,6 +200,7 @@
 				90401A602322EDAA008825B0 /* UserInfo.storyboard in Resources */,
 				90401A642322F0DB008825B0 /* PolicyProposals.storyboard in Resources */,
 				90817C772321240D0024C507 /* Main.storyboard in Resources */,
+				90652293232A063B006A7502 /* NotoSansMonoCJKkr-Regular.otf in Resources */,
 				90401A6F23243DA9008825B0 /* IDVerification.storyboard in Resources */,
 				905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */,
 				90401A622322EE37008825B0 /* PolicyStatus.storyboard in Resources */,
