@@ -9,6 +9,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Bold.otf">
+            <string>NotoSansCJKkr-Bold</string>
+        </array>
+        <array key="NotoSansCJKkr-Medium.otf">
+            <string>NotoSansCJKkr-Medium</string>
+        </array>
+        <array key="NotoSansCJKkr-Regular.otf">
+            <string>NotoSansCJKkr-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Policy Status Controller-->
         <scene sceneID="3ZH-jT-5Ce">
@@ -17,7 +28,99 @@
                     <view key="view" contentMode="scaleToFill" id="mjQ-5S-l8f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정책현황" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H5-9H-tIE">
+                                <rect key="frame" x="16" y="64" width="104" height="42"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="rwy-gS-5wZ">
+                                <rect key="frame" x="356" y="64" width="34" height="42"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n6P-1H-aVW">
+                                <rect key="frame" x="0.0" y="127" width="414" height="686"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="535" id="Oz2-q8-KcJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="535"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oz2-q8-KcJ" id="Kpe-EP-V5Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="534.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="rn1-vH-EMK">
+                                                    <rect key="frame" x="36" y="27" width="34" height="34"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO8-Ro-Lj8">
+                                                    <rect key="frame" x="76" y="27" width="28" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 min ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uct-VL-Y47">
+                                                    <rect key="frame" x="76" y="44.5" width="50" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문 대통령 “한·미얀마 경협산단, 양국 정부 협력 모범사례”" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUl-e7-o7U">
+                                                    <rect key="frame" x="36" y="75" width="287" height="18"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="구성 요소 14 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="ESA-v0-v6X">
+                                                    <rect key="frame" x="36" y="102" width="342" height="215"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-9G-Grz">
+                                                    <rect key="frame" x="36" y="329" width="342" height="24"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite" translatesAutoresizingMaskIntoConstraints="NO" id="ngE-td-d9R">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="24"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-J5-FEZ">
+                                                            <rect key="frame" x="175" y="2" width="167" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gO8-Ro-Lj8" firstAttribute="top" secondItem="rn1-vH-EMK" secondAttribute="top" id="6uI-X8-lzg"/>
+                                                <constraint firstItem="hUl-e7-o7U" firstAttribute="leading" secondItem="rn1-vH-EMK" secondAttribute="leading" id="9V8-DZ-LJA"/>
+                                                <constraint firstItem="gO8-Ro-Lj8" firstAttribute="leading" secondItem="rn1-vH-EMK" secondAttribute="trailing" constant="6" id="I5f-Z3-IPG"/>
+                                                <constraint firstItem="gO8-Ro-Lj8" firstAttribute="leading" secondItem="uct-VL-Y47" secondAttribute="leading" id="LcZ-br-pcM"/>
+                                                <constraint firstItem="ESA-v0-v6X" firstAttribute="leading" secondItem="Kpe-EP-V5Y" secondAttribute="leadingMargin" constant="16" id="RyK-iN-Heo"/>
+                                                <constraint firstItem="LqR-9G-Grz" firstAttribute="leading" secondItem="ESA-v0-v6X" secondAttribute="leading" id="cA8-8o-5Jj"/>
+                                                <constraint firstItem="LqR-9G-Grz" firstAttribute="top" secondItem="ESA-v0-v6X" secondAttribute="bottom" constant="12" id="itp-2c-uRK"/>
+                                                <constraint firstItem="rn1-vH-EMK" firstAttribute="leading" secondItem="Kpe-EP-V5Y" secondAttribute="leadingMargin" constant="16" id="jwh-Ie-mrw"/>
+                                                <constraint firstItem="LqR-9G-Grz" firstAttribute="trailing" secondItem="ESA-v0-v6X" secondAttribute="trailing" id="l5j-0U-fbI"/>
+                                                <constraint firstItem="rn1-vH-EMK" firstAttribute="top" secondItem="Kpe-EP-V5Y" secondAttribute="topMargin" constant="16" id="oTi-SM-RK6"/>
+                                                <constraint firstItem="uct-VL-Y47" firstAttribute="bottom" secondItem="rn1-vH-EMK" secondAttribute="bottom" id="oht-IH-syV"/>
+                                                <constraint firstItem="hUl-e7-o7U" firstAttribute="top" secondItem="rn1-vH-EMK" secondAttribute="bottom" constant="14" id="q2p-72-hhf"/>
+                                                <constraint firstItem="ESA-v0-v6X" firstAttribute="top" secondItem="hUl-e7-o7U" secondAttribute="bottom" constant="9" id="q4z-EV-1z9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ESA-v0-v6X" secondAttribute="trailing" constant="16" id="xfJ-Tb-0Df"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1H5-9H-tIE" firstAttribute="top" secondItem="a7r-dG-ntJ" secondAttribute="top" constant="20" id="37B-KE-yMa"/>
+                            <constraint firstItem="1H5-9H-tIE" firstAttribute="leading" secondItem="a7r-dG-ntJ" secondAttribute="leading" constant="16" id="C6u-Ny-plQ"/>
+                            <constraint firstItem="n6P-1H-aVW" firstAttribute="top" secondItem="1H5-9H-tIE" secondAttribute="bottom" constant="21" id="CsZ-W3-EnE"/>
+                            <constraint firstItem="rwy-gS-5wZ" firstAttribute="top" secondItem="1H5-9H-tIE" secondAttribute="top" id="DKR-6C-GCP"/>
+                            <constraint firstItem="n6P-1H-aVW" firstAttribute="leading" secondItem="a7r-dG-ntJ" secondAttribute="leading" id="HXI-hJ-2Ly"/>
+                            <constraint firstItem="rwy-gS-5wZ" firstAttribute="bottom" secondItem="1H5-9H-tIE" secondAttribute="bottom" id="MnQ-X3-kO1"/>
+                            <constraint firstItem="a7r-dG-ntJ" firstAttribute="trailing" secondItem="n6P-1H-aVW" secondAttribute="trailing" id="P0C-M4-5UG"/>
+                            <constraint firstItem="a7r-dG-ntJ" firstAttribute="trailing" secondItem="rwy-gS-5wZ" secondAttribute="trailing" constant="24" id="bc1-nN-RdT"/>
+                            <constraint firstItem="a7r-dG-ntJ" firstAttribute="bottom" secondItem="n6P-1H-aVW" secondAttribute="bottom" id="q79-1Z-J6I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a7r-dG-ntJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="iTR-PT-mNJ"/>
@@ -29,12 +132,11 @@
         <!--Navigation Controller-->
         <scene sceneID="7U4-SO-cYf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2l-0U-yaY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="O2l-0U-yaY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="7CX-0L-1Kd"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8rF-Ly-bYx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -47,4 +149,9 @@
             <point key="canvasLocation" x="287" y="56"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_favorite" width="24" height="24"/>
+        <image name="user3" width="34" height="34"/>
+        <image name="구성 요소 14 – 1" width="314" height="215"/>
+    </resources>
 </document>
