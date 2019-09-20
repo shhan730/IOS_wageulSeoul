@@ -42,11 +42,11 @@
                                 <rect key="frame" x="0.0" y="127" width="414" height="686"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="535" id="Oz2-q8-KcJ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="535"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="368" id="Oz2-q8-KcJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oz2-q8-KcJ" id="Kpe-EP-V5Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="534.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="367.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="rn1-vH-EMK">
