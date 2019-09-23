@@ -22,6 +22,8 @@
 		905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */; };
 		905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905877D3231FDDBC00B8E3D1 /* Assets.xcassets */; };
 		905877D7231FDDBC00B8E3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */; };
+		906E3302233936A500849299 /* IDMessege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E3301233936A500849299 /* IDMessege.swift */; };
+		906E330623393C8300849299 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330523393C8300849299 /* APIRequest.swift */; };
 		90817C772321240D0024C507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90817C762321240D0024C507 /* Main.storyboard */; };
 		90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85174233413F4002181EF /* PhoneNumCheckController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		905877D3231FDDBC00B8E3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905877D6231FDDBC00B8E3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		905877D8231FDDBC00B8E3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906E3301233936A500849299 /* IDMessege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDMessege.swift; sourceTree = "<group>"; };
+		906E330523393C8300849299 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		90817C762321240D0024C507 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		90C85174233413F4002181EF /* PhoneNumCheckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumCheckController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				90401A7223243F19008825B0 /* IDVerificationInfo.swift */,
+				906E330523393C8300849299 /* APIRequest.swift */,
+				906E3301233936A500849299 /* IDMessege.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,12 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906E3302233936A500849299 /* IDMessege.swift in Sources */,
 				90401A6D23242537008825B0 /* UserInfoController.swift in Sources */,
 				905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */,
 				90401A6B23242502008825B0 /* PolicyProposalsController.swift in Sources */,
 				90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */,
 				90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */,
 				90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */,
+				906E330623393C8300849299 /* APIRequest.swift in Sources */,
 				90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

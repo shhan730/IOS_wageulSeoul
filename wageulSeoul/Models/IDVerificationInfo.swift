@@ -13,5 +13,4 @@ struct IDVerificationInfo {
     var isAuthorized = true
     
     
-    
 }
