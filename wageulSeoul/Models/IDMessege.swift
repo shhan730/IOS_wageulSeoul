@@ -9,9 +9,9 @@
 import Foundation
 
 final class Messege: Codable{
-    var phoneNum: String
+    var phone: String
     
-    init(phoneNum: String) {
-        self.phoneNum = phoneNum
+    init(phone: String) {
+        self.phone = phone
     }
 }

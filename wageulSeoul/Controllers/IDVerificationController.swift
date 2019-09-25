@@ -15,13 +15,22 @@ class IDVerificationController: UIViewController {
     
     
     @IBAction func sendPhoneNum(_ sender: UIButton) {
-        
+        let messege = Messege(phone: phoneNum.text!)
+        //print(phoneNum.text!)
+        let postRequest = APIRequest(endPoint: "/sms/code")
+        postRequest.save(messege, completion: { result in
+            switch result{
+            case .success(let messege):
+                print("Messege Sent: \(messege)")
+            case .failure(let error):
+                print("Error Occured: \(error)")
+            }
+        })
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
