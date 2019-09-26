@@ -18,19 +18,10 @@ class IDVerificationController: UIViewController {
         
         UserDefaults.standard.set(phoneNum.text!,forKey: "tempPhoneNum")
         
-        let messege = Message(phone: phoneNum.text!)
+        let api = API(endPoint: "/sms/code", phone: phoneNum.text!)
+        api.post()
         
-        let postRequest = APIRequest(endPoint: "/sms/code")
-        postRequest.save(messege, completion: { result in
-            switch result{
-            case .success(let messege):
-                print("Messege Sent: \(messege)")
-            case .failure(let error):
-                print("Error Occured: \(error)")
-            }
-        })
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

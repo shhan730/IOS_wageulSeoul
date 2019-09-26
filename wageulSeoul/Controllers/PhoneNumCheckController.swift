@@ -24,17 +24,8 @@ class PhoneNumCheckController: UIViewController {
         
         let tempPhoneNum = UserDefaults.standard.value(forKey: "tempPhoneNum") as! String
         
-        let message = Message(phone: tempPhoneNum, code:codeText.text!)
-        
-        let postRequest = APIRequest(endPoint: "/register")
-        postRequest.save(message, completion: { result in
-            switch result{
-            case .success(let messege):
-                print("Messege Sent: \(messege)")
-            case .failure(let error):
-                print("Error Occured: \(error)")
-            }
-        })
+        let api = API(endPoint: "/register", code: codeText.text!, phone: tempPhoneNum)
+        api.post()
     }
     
     
