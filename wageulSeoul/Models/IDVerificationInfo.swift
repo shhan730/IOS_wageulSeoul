@@ -12,5 +12,4 @@ struct IDVerificationInfo {
     
     var isAuthorized = false
     
-    
 }

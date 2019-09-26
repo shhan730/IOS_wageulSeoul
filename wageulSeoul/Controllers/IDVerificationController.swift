@@ -15,8 +15,11 @@ class IDVerificationController: UIViewController {
     
     
     @IBAction func sendPhoneNum(_ sender: UIButton) {
-        let messege = Messege(phone: phoneNum.text!)
-        //print(phoneNum.text!)
+        
+        UserDefaults.standard.set(phoneNum.text!,forKey: "tempPhoneNum")
+        
+        let messege = Message(phone: phoneNum.text!)
+        
         let postRequest = APIRequest(endPoint: "/sms/code")
         postRequest.save(messege, completion: { result in
             switch result{

@@ -8,10 +8,17 @@
 
 import Foundation
 
-final class Messege: Codable{
+class Message: Codable{
     var phone: String
+    var code: String?
     
     init(phone: String) {
         self.phone = phone
+        self.code = nil
+    }
+    
+    init(phone: String, code: String) {
+        self.phone = phone
+        self.code = code
     }
 }
