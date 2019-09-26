@@ -13,10 +13,12 @@ class API{
     var tempURL = ""
     var jsonObj: Dictionary<String,String>
     var endPoint = ""
+    var phone = ""
     
     init(endPoint: String, code: String, phone: String){
         self.tempURL = "https://wageul.heewon.dev/api\(endPoint)"
         self.endPoint = endPoint
+        self.phone = phone
         jsonObj = [
             "phone" : phone,
             "code" : code
@@ -26,6 +28,7 @@ class API{
     init(endPoint: String, phone: String){
         self.tempURL = "https://wageul.heewon.dev/api\(endPoint)"
         self.endPoint = endPoint
+        self.phone = phone
         jsonObj = [
             "phone" : phone,
         ]
@@ -57,6 +60,8 @@ class API{
                 }
                 if self.endPoint == "/register"{
                     self.RegisterCheck(responseCode: responseCode)
+                }else if self.endPoint == "/login"{
+                    self.LoginCheck(responseCode: responseCode)
                 }
                 
             }
@@ -75,12 +80,23 @@ class API{
     }
     
     func RegisterSucess(){
-        
+        UserDefaults.standard.set(true,forKey: "Register")
+        UserDefaults.standard.set(phone,forKey: "FinalPhoneNum")
+        let app = AppDelegate()
+        app.switchToMainUI()
     }
     
     func RegisterError(){
         let app = AppDelegate()
         app.switchToIDVerificationUI()
+    }
+    
+    func LoginCheck(responseCode: Int){
+        if responseCode == 200{
+            UserDefaults.standard.set(true,forKey: "Authorizd")
+        }else if responseCode == 500{
+            UserDefaults.standard.set(false,forKey: "Authorizd")
+        }
     }
     
     

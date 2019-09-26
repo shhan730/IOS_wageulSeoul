@@ -23,18 +23,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.init(displayP3Red: 240.0/255.0, green: 143.0/255.0, blue: 79.0/255.0, alpha: 1.0)
         
         //navigaion var color setting
-        
         UINavigationBar.appearance().tintColor = UIColor.init(displayP3Red: 240.0/255.0, green: 143.0/255.0, blue: 79.0/255.0, alpha: 1.0)
         
         
         // window 제작
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        // Switching Root View
-        if id.isAuthorized{
-            switchToMainUI()
-        }else{
+        //Login Test
+        
+        if UserDefaults.standard.value(forKey: "FinalPhoneNum") == nil{
             switchToIDVerificationUI()
+        }else{
+            switchToMainUI()
         }
         
         // Show Window
