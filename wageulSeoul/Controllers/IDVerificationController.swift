@@ -19,7 +19,7 @@ class IDVerificationController: UIViewController {
         UserDefaults.standard.set(phoneNum.text!,forKey: "tempPhoneNum")
         
         let api = API(endPoint: "/sms/code", phone: phoneNum.text!)
-        api.post()
+       api.post()
         
     }
     

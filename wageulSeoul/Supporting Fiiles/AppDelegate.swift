@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tutorialStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         // View Controller Instance
-        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "Main")
+        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "policy")
         
         // Set Root View Controller of Window
         self.window?.rootViewController = viewController

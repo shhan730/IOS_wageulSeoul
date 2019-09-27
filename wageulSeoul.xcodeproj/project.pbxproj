@@ -26,6 +26,7 @@
 		906E330C233CB80400849299 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330B233CB80400849299 /* API.swift */; };
 		906E330E233D08D200849299 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330D233D08D200849299 /* LoginTest.swift */; };
 		90817C772321240D0024C507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90817C762321240D0024C507 /* Main.storyboard */; };
+		9085E373233E94E700813979 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9085E372233E94E700813979 /* MainController.swift */; };
 		90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85174233413F4002181EF /* PhoneNumCheckController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		906E330B233CB80400849299 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		906E330D233D08D200849299 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		90817C762321240D0024C507 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9085E372233E94E700813979 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		90C85174233413F4002181EF /* PhoneNumCheckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumCheckController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 		90401A6623242196008825B0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9085E372233E94E700813979 /* MainController.swift */,
 				90401A682324229C008825B0 /* PolicyStatusController.swift */,
 				90401A6A23242502008825B0 /* PolicyProposalsController.swift */,
 				90401A6C23242537008825B0 /* UserInfoController.swift */,
@@ -235,6 +238,7 @@
 				90401A6B23242502008825B0 /* PolicyProposalsController.swift in Sources */,
 				90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */,
 				90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */,
+				9085E373233E94E700813979 /* MainController.swift in Sources */,
 				90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */,
 				906E330C233CB80400849299 /* API.swift in Sources */,
 				90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */,

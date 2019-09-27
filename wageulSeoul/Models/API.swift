@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class API{
     
@@ -58,8 +59,20 @@ class API{
                 if let data = data, let dataString = String(data: data, encoding: .utf8) {
                     print("data: \(dataString)\n")
                 }
+                //print(self.endPoint)
                 if self.endPoint == "/register"{
+                    //print("1")
                     self.RegisterCheck(responseCode: responseCode)
+                    
+                    if responseCode == 200{
+                        print("register Sucess")
+                        UserDefaults.standard.set(self.phone,forKey: "FinalPhoneNum")
+                        
+                    }else if responseCode == 400{
+                        print("register Fail")
+                    }
+                    
+                    //end
                 }else if self.endPoint == "/login"{
                     self.LoginCheck(responseCode: responseCode)
                 }
@@ -67,39 +80,19 @@ class API{
             }
         }
         task.resume()
+        
     }
     
     func RegisterCheck(responseCode: Int){
-        if responseCode == 200{
-            print("register Sucess")
-            RegisterSucess()
-        }else if responseCode == 400{
-            print("register Fail")
-            RegisterError()
-        }
-    }
-    
-    func RegisterSucess(){
-        UserDefaults.standard.set(true,forKey: "Register")
-        UserDefaults.standard.set(phone,forKey: "FinalPhoneNum")
-        let app = AppDelegate()
-        app.switchToMainUI()
-    }
-    
-    func RegisterError(){
-        let app = AppDelegate()
-        app.switchToIDVerificationUI()
+        
     }
     
     func LoginCheck(responseCode: Int){
         if responseCode == 200{
-            UserDefaults.standard.set(true,forKey: "Authorizd")
+            UserDefaults.standard.set(true,forKey: "Authorized")
         }else if responseCode == 500{
-            UserDefaults.standard.set(false,forKey: "Authorizd")
+            UserDefaults.standard.set(false,forKey: "Authorized")
         }
-    }
-    
-    func switchToMainUI() {
     }
     
 }
