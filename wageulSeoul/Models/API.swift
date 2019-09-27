@@ -99,5 +99,7 @@ class API{
         }
     }
     
+    func switchToMainUI() {
+    }
     
 }

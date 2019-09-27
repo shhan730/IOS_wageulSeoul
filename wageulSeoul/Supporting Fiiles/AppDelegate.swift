@@ -24,21 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //navigaion var color setting
         UINavigationBar.appearance().tintColor = UIColor.init(displayP3Red: 240.0/255.0, green: 143.0/255.0, blue: 79.0/255.0, alpha: 1.0)
-        
-        
-        // window 제작
-        self.window = UIWindow(frame: UIScreen.main.bounds)
+
         
         //Login Test
-        
         if UserDefaults.standard.value(forKey: "FinalPhoneNum") == nil{
             switchToIDVerificationUI()
         }else{
             switchToMainUI()
         }
-        
-        // Show Window
-        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -66,6 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func switchToMainUI() {
+        
+        // window 제작
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
         // StoryBoard Instance
         let tutorialStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -74,9 +71,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set Root View Controller of Window
         self.window?.rootViewController = viewController
+        
+        // Show Window
+        self.window?.makeKeyAndVisible()
     }
     
     func switchToIDVerificationUI() {
+        
+        
+        // window 제작
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
         // StoryBoard Instance
         let tutorialStoryboard = UIStoryboard(name: "IDVerification", bundle: nil)
         
@@ -85,6 +90,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set Root View Controller of Window
         self.window?.rootViewController = viewController
+        
+        // Show Window
+        self.window?.makeKeyAndVisible()
     }
 
 
