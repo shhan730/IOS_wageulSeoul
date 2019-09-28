@@ -127,11 +127,11 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="55.580357142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--정책현황-->
         <scene sceneID="7U4-SO-cYf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="O2l-0U-yaY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="7CX-0L-1Kd"/>
+                    <tabBarItem key="tabBarItem" title="정책현황" image="square.stack.3d.up" catalog="system" selectedImage="square.stack.3d.up.fill" id="7CX-0L-1Kd"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8rF-Ly-bYx">
@@ -150,6 +150,8 @@
     <resources>
         <image name="14 – 1" width="314" height="215"/>
         <image name="ic_favorite" width="24" height="24"/>
+        <image name="square.stack.3d.up" catalog="system" width="64" height="62"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="64" height="62"/>
         <image name="user3" width="34" height="34"/>
     </resources>
 </document>
