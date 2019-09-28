@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class PolicyStatusController: UIViewController {
     
@@ -15,7 +16,17 @@ class PolicyStatusController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Alamofire.request("https://wageul.heewon.dev/api/policy", method: .get, parameters: [:], encoding: URLEncoding.default, headers: ["Content-Type":"application/json", "Accept":"application/json", "Authorization" : "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)"])
+                    .validate(statusCode: 200..<401)
+                    .responseJSON { (response) in
+                    if let JSON = response.result.value
+                    {
+                        print(JSON)
+                        
+                    }
+                }
+
+
     }
     
     
