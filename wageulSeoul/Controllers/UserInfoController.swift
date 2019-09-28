@@ -11,10 +11,30 @@ import UIKit
 
 class UserInfoController: UIViewController {
     
+    
+    @IBOutlet weak var card1: UIView!
+    
+    @IBOutlet weak var card2: UIView!
+    
+    @IBOutlet weak var card3: UIView!
+    
+    @IBOutlet weak var stack1: UIStackView!
+    
+    @IBOutlet weak var stack2: UIStackView!
+    
+    @IBOutlet weak var stack3: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        setShadow(object: card1)
+        setShadow(object: card2)
+        setShadow(object: card3)
+        
+    }
+    
+    func setShadow(object: UIView){
+       object.layer.makeShadow(color: UIColor.init(displayP3Red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.16), x: 0, y: 1, blur: 2, spread: 0)
     }
     
     
@@ -28,4 +48,25 @@ class UserInfoController: UIViewController {
      }
      */
     
+}
+
+extension CALayer {
+
+    func makeShadow(color: UIColor,
+                    x: CGFloat = 0,
+                    y: CGFloat = 0,
+                    blur: CGFloat = 0,
+                    spread: CGFloat = 0) {
+        shadowColor = color.cgColor
+        shadowOpacity = 1
+        shadowOffset = CGSize(width: x, height: y)
+        shadowRadius = blur / 2
+        if spread == 0 {
+            shadowPath = nil
+        }
+        else {
+            let rect = bounds.insetBy(dx: -spread, dy: -spread)
+            shadowPath = UIBezierPath(rect: rect).cgPath
+        }
+    }
 }
