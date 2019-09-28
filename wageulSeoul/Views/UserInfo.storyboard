@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Bold.otf">
+            <string>NotoSansCJKkr-Bold</string>
+        </array>
         <array key="NotoSansCJKkr-Medium.otf">
             <string>NotoSansCJKkr-Medium</string>
         </array>
@@ -26,7 +29,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2l-cH-lnh">
                                 <rect key="frame" x="0.0" y="88.000000000000014" width="414" height="201.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="Zgg-td-bdq">
+                                        <rect key="frame" x="135" y="26.000000000000007" width="144" height="98.666666666666686"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-1234-1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08x-ru-dk7">
+                                        <rect key="frame" x="125" y="147.66666666666666" width="164" height="26.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.5607843137254902" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Zgg-td-bdq" firstAttribute="top" secondItem="D2l-cH-lnh" secondAttribute="top" constant="26" id="91c-LM-g7g"/>
+                                    <constraint firstItem="08x-ru-dk7" firstAttribute="top" secondItem="Zgg-td-bdq" secondAttribute="bottom" constant="23" id="LFO-iY-rHP"/>
+                                    <constraint firstItem="Zgg-td-bdq" firstAttribute="leading" secondItem="D2l-cH-lnh" secondAttribute="leading" constant="135" id="SIO-X6-h6h"/>
+                                    <constraint firstAttribute="trailing" secondItem="08x-ru-dk7" secondAttribute="trailing" constant="125" id="bPe-Mi-Q9F"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zgg-td-bdq" secondAttribute="trailing" constant="135" id="fns-E0-gua"/>
+                                    <constraint firstAttribute="bottom" secondItem="08x-ru-dk7" secondAttribute="bottom" constant="27" id="izO-Op-XmP"/>
+                                    <constraint firstItem="08x-ru-dk7" firstAttribute="leading" secondItem="D2l-cH-lnh" secondAttribute="leading" constant="125" id="leh-Uf-tdE"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-zI-H5b">
                                 <rect key="frame" x="24" y="309.33333333333326" width="366" height="503.66666666666674"/>
@@ -323,5 +346,6 @@ Lorem ipsum Lorem ipsum Lorem</string>
         <image name="person.crop.circle" catalog="system" width="64" height="62"/>
         <image name="person.crop.circle.fill" catalog="system" width="64" height="62"/>
         <image name="shopping-cart" width="17.666666030883789" height="17"/>
+        <image name="user3" width="34" height="34"/>
     </resources>
 </document>
