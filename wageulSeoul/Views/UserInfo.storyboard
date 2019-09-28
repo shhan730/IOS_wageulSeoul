@@ -104,7 +104,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="24 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="sr1-b6-jl7">
                                                         <rect key="frame" x="0.0" y="0.0" width="36.666666666666664" height="24.333333333333332"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총자산: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e0-CE-KBl">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영향력: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e0-CE-KBl">
                                                         <rect key="frame" x="68.666666666666671" y="0.0" width="228.66666666666663" height="24.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -145,7 +145,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shopping-cart" translatesAutoresizingMaskIntoConstraints="NO" id="ZEN-Us-htY">
                                                         <rect key="frame" x="0.0" y="0.0" width="36.666666666666664" height="24.666666666666668"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총자산: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCj-Pp-BKb">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기부마켓" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCj-Pp-BKb">
                                                         <rect key="frame" x="68.666666666666671" y="0.0" width="228.66666666666663" height="24.666666666666668"/>
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
                                                         <color key="textColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -210,9 +210,6 @@
                         <outlet property="card1" destination="2VC-ap-Cgf" id="A6e-Nr-Vg6"/>
                         <outlet property="card2" destination="zj3-GM-7KJ" id="58b-au-5JQ"/>
                         <outlet property="card3" destination="LGi-JF-2dn" id="chq-gv-Nog"/>
-                        <outlet property="stack1" destination="XDz-uy-YZj" id="Z9C-uU-cIP"/>
-                        <outlet property="stack2" destination="1Qy-m4-k4c" id="Cse-OH-osb"/>
-                        <outlet property="stack3" destination="crg-iu-ezK" id="A6q-36-3kg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuU-zN-vZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>

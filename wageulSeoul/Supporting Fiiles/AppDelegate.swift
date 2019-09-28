@@ -27,10 +27,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         //Login Test
-        if UserDefaults.standard.value(forKey: "FinalPhoneNum") == nil{
+        let finalPhoneNum = UserDefaults.standard.value(forKey: "FinalPhoneNum")
+        
+        if finalPhoneNum == nil{
             switchToIDVerificationUI()
         }else{
-            switchToMainUI()
+            
+            let api = API(endPoint: "/login", phone: finalPhoneNum as! String)
+            api.post()
+            
+            
+            if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(true){
+                print("moving to Main")
+                switchToMainUI()
+            }else if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(false){
+                print("Moving to ID")
+                switchToIDVerificationUI()
+            }
+            
+            
         }
         
         return true

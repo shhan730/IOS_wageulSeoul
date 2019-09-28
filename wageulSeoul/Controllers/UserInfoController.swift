@@ -18,11 +18,7 @@ class UserInfoController: UIViewController {
     
     @IBOutlet weak var card3: UIView!
     
-    @IBOutlet weak var stack1: UIStackView!
     
-    @IBOutlet weak var stack2: UIStackView!
-    
-    @IBOutlet weak var stack3: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +26,8 @@ class UserInfoController: UIViewController {
         setShadow(object: card1)
         setShadow(object: card2)
         setShadow(object: card3)
+        
+        
         
     }
     
