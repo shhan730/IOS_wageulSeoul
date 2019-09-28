@@ -12,7 +12,7 @@ import Alamofire
 
 class PolicyStatusController: UIViewController {
     
-    let IDInfo = IDVerificationInfo()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

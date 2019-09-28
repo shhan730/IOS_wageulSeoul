@@ -28,6 +28,7 @@
 		906E330E233D08D200849299 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330D233D08D200849299 /* LoginTest.swift */; };
 		90817C772321240D0024C507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90817C762321240D0024C507 /* Main.storyboard */; };
 		90B831C6233FC4F60045BCCC /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B831C5233FC4F60045BCCC /* UserInfoData.swift */; };
+		90B831C8233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */; };
 		90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85174233413F4002181EF /* PhoneNumCheckController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		906E330D233D08D200849299 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		90817C762321240D0024C507 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		90B831C5233FC4F60045BCCC /* UserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
+		90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PolicyStatusTableViewCell.swift; path = wageulSeoul/Models/PolicyStatusTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		90C85174233413F4002181EF /* PhoneNumCheckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumCheckController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				906E3301233936A500849299 /* IDMessege.swift */,
 				906E330D233D08D200849299 /* LoginTest.swift */,
 				90B831C5233FC4F60045BCCC /* UserInfoData.swift */,
+				90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */,
 				90B831C6233FC4F60045BCCC /* UserInfoData.swift in Sources */,
 				90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */,
+				90B831C8233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift in Sources */,
 				906E330C233CB80400849299 /* API.swift in Sources */,
 				90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */,
 			);
