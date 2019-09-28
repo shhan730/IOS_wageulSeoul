@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let api = API(endPoint: "/login", phone: finalPhoneNum as! String)
             api.post()
             
-            run(after: 0.001){
+            run(after: 0.5){
                 if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(true){
                     print("moving to Main")
                     self.switchToMainUI()

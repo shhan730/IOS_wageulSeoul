@@ -30,7 +30,7 @@ class PhoneNumCheckController: UIViewController {
         api.post()
         
         // Delay for 2 seconds, then run the code between the braces.
-        let secondsToDelay = 0.5
+        let secondsToDelay = 0.2
         run(after: secondsToDelay) {
             // This code will run after the delay
             //Login Test
