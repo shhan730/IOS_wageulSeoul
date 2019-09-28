@@ -11,12 +11,10 @@ import UIKit
 
 class PolicyStatusController: UIViewController {
     
-    let IDInfo = IDVerificationInfo()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let api = API(endPoint: "/policy", )
-        //api.post()
         
     }
     
