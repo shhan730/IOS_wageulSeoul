@@ -36,13 +36,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let api = API(endPoint: "/login", phone: finalPhoneNum as! String)
             api.post()
             
-            
-            if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(true){
-                print("moving to Main")
-                switchToMainUI()
-            }else if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(false){
-                print("Moving to ID")
-                switchToIDVerificationUI()
+            run(after: 0.001){
+                if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(true){
+                    print("moving to Main")
+                    self.switchToMainUI()
+                }else if UserDefaults.standard.value(forKey: "Authorized") as? Bool == Optional(false){
+                    print("Moving to ID")
+                    self.switchToIDVerificationUI()
+                }
             }
             
             
@@ -109,6 +110,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Show Window
         self.window?.makeKeyAndVisible()
     }
+    
+    func run(after wait: TimeInterval, closure: @escaping () -> Void) {
+        let queue = DispatchQueue.main
+        queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
+    }
+
 
 
 }

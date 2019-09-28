@@ -105,7 +105,7 @@ class API{
                 //print(self.endPoint)
                 if self.endPoint == "/register"{
                     //print("1")
-                    self.RegisterCheck(responseCode: responseCode)
+                    //self.RegisterCheck(responseCode: responseCode)
                     
                     if responseCode == 200{
                         print("register Sucess")
@@ -117,7 +117,11 @@ class API{
                     
                     //end
                 }else if self.endPoint == "/login"{
-                    self.LoginCheck(responseCode: responseCode)
+                    if responseCode == 200{
+                        UserDefaults.standard.set(true,forKey: "Authorized")
+                    }else if responseCode == 500{
+                        UserDefaults.standard.set(false,forKey: "Authorized")
+                    }
                 }
                 
             }
@@ -125,17 +129,4 @@ class API{
         task.resume()
         
     }
-    
-    func RegisterCheck(responseCode: Int){
-        
-    }
-    
-    func LoginCheck(responseCode: Int){
-        if responseCode == 200{
-            UserDefaults.standard.set(true,forKey: "Authorized")
-        }else if responseCode == 500{
-            UserDefaults.standard.set(false,forKey: "Authorized")
-        }
-    }
-    
 }
