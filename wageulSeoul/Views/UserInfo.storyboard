@@ -210,6 +210,9 @@
                         <outlet property="card1" destination="2VC-ap-Cgf" id="A6e-Nr-Vg6"/>
                         <outlet property="card2" destination="zj3-GM-7KJ" id="58b-au-5JQ"/>
                         <outlet property="card3" destination="LGi-JF-2dn" id="chq-gv-Nog"/>
+                        <outlet property="influence" destination="2e0-CE-KBl" id="7JU-Jb-ggH"/>
+                        <outlet property="phoneNum" destination="08x-ru-dk7" id="jil-z5-C0m"/>
+                        <outlet property="userAsset" destination="BRI-Lz-1nY" id="8N3-XO-9NS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuU-zN-vZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>

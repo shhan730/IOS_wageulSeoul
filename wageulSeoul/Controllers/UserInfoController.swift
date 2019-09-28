@@ -18,6 +18,11 @@ class UserInfoController: UIViewController {
     
     @IBOutlet weak var card3: UIView!
     
+    @IBOutlet weak var userAsset: UILabel!
+    
+    @IBOutlet weak var influence: UILabel!
+    
+    @IBOutlet weak var phoneNum: UILabel!
     
     
     override func viewDidLoad() {
@@ -27,6 +32,7 @@ class UserInfoController: UIViewController {
         setShadow(object: card2)
         setShadow(object: card3)
         
+        self.phoneNum.text = UserDefaults.standard.value(forKey: "FinalPhoneNum") as? String
         
         
     }
