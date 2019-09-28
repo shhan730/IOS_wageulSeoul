@@ -17,13 +17,11 @@
 		90401A6D23242537008825B0 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A6C23242537008825B0 /* UserInfoController.swift */; };
 		90401A6F23243DA9008825B0 /* IDVerification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90401A6E23243DA9008825B0 /* IDVerification.storyboard */; };
 		90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A7023243E0D008825B0 /* IDVerificationController.swift */; };
-		90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90401A7223243F19008825B0 /* IDVerificationInfo.swift */; };
 		90401A852327BF89008825B0 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */; };
 		90401A862327BF89008825B0 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */; };
 		905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905877CC231FDDBB00B8E3D1 /* AppDelegate.swift */; };
 		905877D4231FDDBC00B8E3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905877D3231FDDBC00B8E3D1 /* Assets.xcassets */; };
 		905877D7231FDDBC00B8E3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905877D5231FDDBC00B8E3D1 /* LaunchScreen.storyboard */; };
-		906E3302233936A500849299 /* IDMessege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E3301233936A500849299 /* IDMessege.swift */; };
 		906E330C233CB80400849299 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330B233CB80400849299 /* API.swift */; };
 		906E330E233D08D200849299 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E330D233D08D200849299 /* LoginTest.swift */; };
 		90817C772321240D0024C507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90817C762321240D0024C507 /* Main.storyboard */; };
@@ -42,7 +40,6 @@
 		90401A6C23242537008825B0 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
 		90401A6E23243DA9008825B0 /* IDVerification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IDVerification.storyboard; sourceTree = "<group>"; };
 		90401A7023243E0D008825B0 /* IDVerificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDVerificationController.swift; sourceTree = "<group>"; };
-		90401A7223243F19008825B0 /* IDVerificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDVerificationInfo.swift; sourceTree = "<group>"; };
 		90401A832327BF87008825B0 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		90401A842327BF89008825B0 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		905877C9231FDDBB00B8E3D1 /* wageulSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wageulSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +47,6 @@
 		905877D3231FDDBC00B8E3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905877D6231FDDBC00B8E3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		905877D8231FDDBC00B8E3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		906E3301233936A500849299 /* IDMessege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDMessege.swift; sourceTree = "<group>"; };
 		906E330B233CB80400849299 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		906E330D233D08D200849299 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		90817C762321240D0024C507 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -99,9 +95,7 @@
 		90401A6723242202008825B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				90401A7223243F19008825B0 /* IDVerificationInfo.swift */,
 				906E330B233CB80400849299 /* API.swift */,
-				906E3301233936A500849299 /* IDMessege.swift */,
 				906E330D233D08D200849299 /* LoginTest.swift */,
 				90B831C5233FC4F60045BCCC /* UserInfoData.swift */,
 				90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */,
@@ -242,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				906E3302233936A500849299 /* IDMessege.swift in Sources */,
 				90401A6D23242537008825B0 /* UserInfoController.swift in Sources */,
 				905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */,
 				906E330E233D08D200849299 /* LoginTest.swift in Sources */,
@@ -250,7 +243,6 @@
 				90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */,
 				90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */,
 				90B831C6233FC4F60045BCCC /* UserInfoData.swift in Sources */,
-				90401A7323243F19008825B0 /* IDVerificationInfo.swift in Sources */,
 				90B831C8233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift in Sources */,
 				906E330C233CB80400849299 /* API.swift in Sources */,
 				90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */,
