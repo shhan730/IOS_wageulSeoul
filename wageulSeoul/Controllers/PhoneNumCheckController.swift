@@ -29,14 +29,17 @@ class PhoneNumCheckController: UIViewController {
         
         api.post()
         
-        // Delay for 2 seconds, then run the code between the braces.
-        let secondsToDelay = 0.2
+        let secondsToDelay = 0.5
         run(after: secondsToDelay) {
             // This code will run after the delay
             //Login Test
             if (UserDefaults.standard.value(forKey: "FinalPhoneNum") as? String) != nil{
                 print("Sucess")
-                self.switchToMainUI()
+                let api = API(endPoint: "/login", phone: UserDefaults.standard.value(forKey: "FinalPhoneNum") as! String)
+                api.post()
+                self.run(after: 0.5){
+                    self.switchToMainUI()
+                }
             }else{
                 print("fail")
                 self.registerFail()
