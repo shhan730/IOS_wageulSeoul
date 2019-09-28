@@ -15,8 +15,8 @@ class PolicyStatusController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-\        let api = API(endPoint: "/policy", )
-        api.post()
+        //let api = API(endPoint: "/policy", )
+        //api.post()
         
     }
     
