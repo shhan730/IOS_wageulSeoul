@@ -15,7 +15,8 @@ class API{
     var jsonObj: Dictionary<String,String>
     var endPoint = ""
     var phone = ""
-    
+    var token = ""
+
     init(endPoint: String, code: String, phone: String){
         self.tempURL = "https://wageul.heewon.dev/api\(endPoint)"
         self.endPoint = endPoint
@@ -33,6 +34,48 @@ class API{
         jsonObj = [
             "phone" : phone,
         ]
+    }
+    
+    init(endPoint: String, token: String){
+        self.tempURL = "https://wageul.heewon.dev/api\(endPoint)"
+        self.endPoint = endPoint
+        self.token = "Bearer "+token
+        jsonObj = ["phone" : ""]
+    }
+    
+    func get(){
+        let url = URL(string: tempURL)!
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Content-type")
+        request.addValue(token, forHTTPHeaderField: "Authorization")
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            var responseCode: Int = 0
+            
+            if let error = error {
+                print("error: \(error)")
+            } else {
+                if let response = response as? HTTPURLResponse {
+                    print("statusCode: \(response.statusCode)\n")
+                    responseCode = response.statusCode
+                }
+                if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    print("data: \(dataString)\n")
+                }
+                    
+                if responseCode == 200{
+                    print("api Sucess")
+                    
+                }else if responseCode == 400{
+                    print("api Fail")
+                }
+                
+            }
+        }
+        task.resume()
     }
     
     func post(){
