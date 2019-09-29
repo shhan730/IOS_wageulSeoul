@@ -37,18 +37,25 @@ class PolicyStatusTableViewCell: UITableViewCell {
     }
         
     @IBAction func heartButtonClick(_ sender: UIButton) {
-        if self.heartButtonActive == true {self.heartButtonActive = false}
-        else {self.heartButtonActive = true}
+        if self.heartButtonActive == true {
+            self.heartButtonActive = false
+            self.heartNum.text = String(Int(self.heartNum.text!)! - 1)
+        }
+        else {
+            self.heartButtonActive = true
+            self.heartNum.text = String(Int(self.heartNum.text!)! + 1)
+        }
         self.checkHeartButtonisActive()
+        
     }
     
     func checkHeartButtonisActive(){
         if self.heartButtonActive{
-            self.heartButtonActive = false
-            heartButton.setImage(UIImage(named : "spacedHeart"), for: UIControl.State.normal)
-        }else{
             self.heartButtonActive = true
             heartButton.setImage(UIImage(named : "filledHeart"), for: UIControl.State.normal)
+        }else{
+            self.heartButtonActive = false
+            heartButton.setImage(UIImage(named : "spacedHeart"), for: UIControl.State.normal)
         }
     }
 }
