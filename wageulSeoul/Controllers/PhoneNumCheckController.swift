@@ -27,25 +27,25 @@ class PhoneNumCheckController: UIViewController {
         
         let api = API(endPoint: "/register", code: codeText.text!, phone: tempPhoneNum)
         
-        api.post()
-        
-        let secondsToDelay = 0.5
-        run(after: secondsToDelay) {
-            // This code will run after the delay
-            //Login Test
-            if (UserDefaults.standard.value(forKey: "FinalPhoneNum") as? String) != nil{
-                print("Sucess")
-                let api = API(endPoint: "/login", phone: UserDefaults.standard.value(forKey: "FinalPhoneNum") as! String)
-                api.post()
-                self.run(after: 0.5){
-                    self.switchToMainUI()
+        api.post() {(returns) in
+            print(returns)
+            if returns["status"] as! String == "success"{
+                UserDefaults.standard.set(tempPhoneNum, forKey: "FinalPhoneNum")
+                let login = API(endPoint: "/login", phone: UserDefaults.standard.value(forKey: "FinalPhoneNum") as! String)
+                login.post() {(returns) in
+                    if returns["status"] as! String == "success" {
+                        UserDefaults.standard.set(returns["access_token"], forKey: "token")
+                        self.switchToMainUI()
+
+                    }else{
+                        self.registerFail()
+                    }
                 }
+
             }else{
-                print("fail")
                 self.registerFail()
             }
         }
-        
     }
     
     func switchToMainUI() {
