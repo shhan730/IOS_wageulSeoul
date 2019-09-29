@@ -19,6 +19,11 @@ class API{
     var header:HTTPHeaders
     var body:[String:String] = [:]
     
+    init(endPoint: String, authToken:String, id: Int){
+        self.endPoint = endPoint
+        self.header = ["Content-Type":"application/x-www-form-urlencoded", "Accept":"application/json", "id": String(id)]
+    }
+    
     init(endPoint: String, code: String, phone: String){
         self.endPoint = endPoint
         self.phone = phone
