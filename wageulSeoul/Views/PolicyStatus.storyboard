@@ -82,6 +82,9 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-0g-rVa">
                                                                     <rect key="frame" x="307" y="0.0" width="19.5" height="18"/>
                                                                     <state key="normal" title="Button" image="ic_favorite"/>
+                                                                    <connections>
+                                                                        <action selector="heartButtonClick:" destination="Oz2-q8-KcJ" eventType="touchUpInside" id="HFe-dH-en7"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="421" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
                                                                     <rect key="frame" x="336.5" y="0.0" width="18.5" height="18"/>
@@ -120,6 +123,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="heartButton" destination="dgT-0g-rVa" id="7Nx-8E-M8X"/>
                                             <outlet property="heartNum" destination="Dre-Je-leT" id="n8S-LB-CdM"/>
                                             <outlet property="subTitile" destination="OA8-Ao-U1q" id="qZM-P8-SzD"/>
                                             <outlet property="tag1" destination="n0t-IU-lcY" id="80Q-Fi-GAE"/>
