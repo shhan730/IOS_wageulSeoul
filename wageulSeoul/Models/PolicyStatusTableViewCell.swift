@@ -10,6 +10,19 @@ import UIKit
 
 class PolicyStatusTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var title: UILabel!
     
-
+    @IBOutlet weak var tag1: UILabel!
+    
+    @IBOutlet weak var tag2: UILabel!
+    
+    @IBOutlet weak var subTitile: UILabel!
+    
+    @IBOutlet weak var heartImage: UIImageView!
+    
+    @IBOutlet weak var heartNum: UILabel!
+    
+    
+    
+    
 }

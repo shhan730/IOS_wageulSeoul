@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="126.5" width="414" height="686.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="84" id="Oz2-q8-KcJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="84" id="Oz2-q8-KcJ" customClass="PolicyStatusTableViewCell" customModule="wageulSeoul" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oz2-q8-KcJ" id="Kpe-EP-V5Y">
@@ -82,7 +82,7 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="18 – 5" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-o5-JLc">
                                                                     <rect key="frame" x="307" y="0.0" width="18.5" height="14.5"/>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="421" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
                                                                     <rect key="frame" x="335.5" y="0.0" width="18.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <nil key="textColor"/>
@@ -116,6 +116,14 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="x6i-xk-7hs" secondAttribute="trailing" id="r4W-te-dfc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heartImage" destination="xXd-o5-JLc" id="8NB-Cl-NOL"/>
+                                            <outlet property="heartNum" destination="Dre-Je-leT" id="n8S-LB-CdM"/>
+                                            <outlet property="subTitile" destination="OA8-Ao-U1q" id="qZM-P8-SzD"/>
+                                            <outlet property="tag1" destination="n0t-IU-lcY" id="80Q-Fi-GAE"/>
+                                            <outlet property="tag2" destination="VpZ-mt-yWu" id="JsH-rh-g5x"/>
+                                            <outlet property="title" destination="zxt-hL-ZoL" id="r3E-Qx-dzc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
