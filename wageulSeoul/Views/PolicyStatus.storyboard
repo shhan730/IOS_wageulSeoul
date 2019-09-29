@@ -79,25 +79,27 @@
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="18 – 5" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-o5-JLc">
-                                                                    <rect key="frame" x="307" y="0.0" width="18.5" height="18"/>
-                                                                </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-0g-rVa">
+                                                                    <rect key="frame" x="307" y="0.0" width="19.5" height="18"/>
+                                                                    <state key="normal" title="Button" image="ic_favorite"/>
+                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="421" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
-                                                                    <rect key="frame" x="335.5" y="0.0" width="18.5" height="18"/>
+                                                                    <rect key="frame" x="336.5" y="0.0" width="18.5" height="18"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icons8-share-rounded-96" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-9E-fFr">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ1-c5-DSO">
                                                                     <rect key="frame" x="355.5" y="0.0" width="18.5" height="18"/>
-                                                                </imageView>
+                                                                    <state key="normal" title="Button" image="icons8-share-rounded-96"/>
+                                                                </button>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="n0t-IU-lcY" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.12" id="3YU-Qe-V36"/>
                                                                 <constraint firstItem="VpZ-mt-yWu" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.12" id="8tQ-WM-wyv"/>
-                                                                <constraint firstItem="xXd-o5-JLc" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="DMy-sD-6sT"/>
+                                                                <constraint firstItem="dgT-0g-rVa" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" constant="1" id="OpN-AC-gHL"/>
                                                                 <constraint firstItem="OA8-Ao-U1q" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.5" id="Qgb-HL-zv0"/>
-                                                                <constraint firstItem="xiW-9E-fFr" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="efm-kq-CUb"/>
+                                                                <constraint firstItem="YJ1-c5-DSO" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="pje-Uk-T9Z"/>
                                                                 <constraint firstItem="Dre-Je-leT" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="rxg-As-DfZ"/>
                                                             </constraints>
                                                         </stackView>
@@ -118,7 +120,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="heartImage" destination="xXd-o5-JLc" id="8NB-Cl-NOL"/>
                                             <outlet property="heartNum" destination="Dre-Je-leT" id="n8S-LB-CdM"/>
                                             <outlet property="subTitile" destination="OA8-Ao-U1q" id="qZM-P8-SzD"/>
                                             <outlet property="tag1" destination="n0t-IU-lcY" id="80Q-Fi-GAE"/>
@@ -173,9 +174,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="18 – 5" width="12.5" height="10"/>
         <image name="doc.text" catalog="system" width="56" height="64"/>
         <image name="doc.text.fill" catalog="system" width="56" height="64"/>
+        <image name="ic_favorite" width="24" height="24"/>
         <image name="icons8-share-rounded-96" width="12" height="12"/>
         <image name="user3" width="34" height="34"/>
     </resources>

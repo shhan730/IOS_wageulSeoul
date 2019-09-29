@@ -18,8 +18,6 @@ class PolicyStatusTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subTitile: UILabel!
     
-    @IBOutlet weak var heartImage: UIImageView!
-    
     @IBOutlet weak var heartNum: UILabel!
     
     func setCell(policyStatusInfo: PolicyStatusInfo){
@@ -27,7 +25,6 @@ class PolicyStatusTableViewCell: UITableViewCell {
         self.tag1.text = policyStatusInfo.tag1
         self.tag2.text = policyStatusInfo.tag2
         self.subTitile.text = policyStatusInfo.subTitle
-        self.heartImage.image = policyStatusInfo.heartImage
         self.heartNum.text = policyStatusInfo.heartNum
     }
     
