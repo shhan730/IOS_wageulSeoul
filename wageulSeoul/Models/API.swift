@@ -45,14 +45,14 @@ class API{
         jsonObj = ["phone" : ""]
     }
     
-    func get(){
+    func get(complete:@escaping (_ reviews: NSDictionary) -> Void){
         let url = URL(string: tempURL)!
         let header = ["Content-Type":"application/json", "Accept":"application/json", "Authorization" : "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)"]
         Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: header)
             .responseJSON { (response) in
             if response.result.value != nil
             {
-                self.data =  response.result.value as! NSDictionary
+                complete(response.result.value as! NSDictionary)
             }
         }
     }

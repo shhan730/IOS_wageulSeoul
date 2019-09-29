@@ -17,14 +17,9 @@ class PolicyStatusController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let api = API(endPoint: "/policy", token: "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
-        
-        api.get()
-        
-        run(after: 1.0){
-            print(api.data)
+        api.get() { (reviews) in
+            print(reviews)
         }
-        
-           
     }
     
     
