@@ -17,10 +17,14 @@ class PolicyStatusController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let api = API(endPoint: "/policy", token: "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
-        print(api.get((text) -> NSDictionary) {
-            print(test)
-        })
-
+        
+        api.get()
+        
+        run(after: 1.0){
+            print(api.data)
+        }
+        
+           
     }
     
     
@@ -36,4 +40,11 @@ class PolicyStatusController: UIViewController {
      }
      */
     
+    func run(after wait: TimeInterval, closure: @escaping () -> Void) {
+        let queue = DispatchQueue.main
+        queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
+    }
+    
 }
+
+

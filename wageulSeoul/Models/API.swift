@@ -17,6 +17,7 @@ class API{
     var endPoint = ""
     var phone = ""
     var token = ""
+    var data: NSDictionary = [:]
 
     init(endPoint: String, code: String, phone: String){
         self.tempURL = "https://wageul.heewon.dev/api\(endPoint)"
@@ -44,14 +45,14 @@ class API{
         jsonObj = ["phone" : ""]
     }
     
-    func get(_  completion: () -> NSDictionary){
+    func get(){
         let url = URL(string: tempURL)!
         let header = ["Content-Type":"application/json", "Accept":"application/json", "Authorization" : "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)"]
         Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: header)
             .responseJSON { (response) in
             if response.result.value != nil
             {
-                response.result.value as! NSDictionary
+                self.data =  response.result.value as! NSDictionary
             }
         }
     }
