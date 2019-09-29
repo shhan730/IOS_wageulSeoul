@@ -22,7 +22,14 @@ class PolicyStatusTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heartNum: UILabel!
     
-    
+    func setCell(policyStatusInfo: PolicyStatusInfo){
+        self.title.text = policyStatusInfo.title
+        self.tag1.text = policyStatusInfo.tag1
+        self.tag2.text = policyStatusInfo.tag2
+        self.subTitile.text = policyStatusInfo.subTitle
+        self.heartImage.image = policyStatusInfo.heartImage
+        self.heartNum.text = policyStatusInfo.heartNum
+    }
     
     
 }
