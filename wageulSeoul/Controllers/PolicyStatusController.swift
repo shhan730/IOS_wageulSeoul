@@ -12,14 +12,37 @@ import Alamofire
 
 class PolicyStatusController: UIViewController {
     
+    @IBOutlet weak var tabelView: UITableView!
     
+    var info: [PolicyStatusInfo] = []
+    var data: NSDictionary = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabelView.estimatedRowHeight = 88
         let api = API(endPoint: "/policy", token: "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
         api.get() { (reviews) in
-            print(reviews)
+            self.data = reviews
+            self.info = self.createArray()
+            self.tabelView.delegate = self
+            self.tabelView.dataSource = self
         }
+    }
+    
+    func createArray() -> [PolicyStatusInfo]{
+        
+        var tempArray: [PolicyStatusInfo] = []
+        
+        let array = data["data"] as! NSArray
+        
+        for item in array {
+            let i = item as! NSDictionary
+            let tempCell = PolicyStatusInfo.init(title: i["title"]! as! String, tag1: "환경", tag2: "공개", subTitle: "공원녹화>공원녹화수행", heartNum: "77", isHeartClicked: false)
+            tempArray.append(tempCell)
+            
+        }
+        
+        return tempArray
     }
     
     
@@ -34,12 +57,19 @@ class PolicyStatusController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+
+
+}
+extension PolicyStatusController: UITableViewDataSource, UITableViewDelegate{
     
-    func run(after wait: TimeInterval, closure: @escaping () -> Void) {
-        let queue = DispatchQueue.main
-        queue.asyncAfter(deadline: DispatchTime.now() + wait, execute: closure)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.info.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let info = self.info[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "statusCell") as! PolicyStatusTableViewCell
+        cell.setCell(policyStatusInfo: info)
+        return cell
+    }
 }
-
-
