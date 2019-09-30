@@ -45,7 +45,7 @@ class PolicyStatusTableViewCell: UITableViewCell {
             self.heartNum.text = String(Int(self.heartNum.text!)! - 1)
         }
         else {
-            let api = API(endPoint: "/policy/\(id)/heart", authToken: UserDefaults.standard.value(forKey: "token") as! String, id: id)
+            let api = API(endPoint: "/policy/\(id)/heart", authToken: "bearer \(UserDefaults.standard.value(forKey: "token") as! String)", id: id)
             api.get(){
                 (reviews) in
                 print(reviews)
