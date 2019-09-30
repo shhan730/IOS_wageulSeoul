@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BbN-vD-hSz">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,25 +29,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2l-cH-lnh">
                                 <rect key="frame" x="0.0" y="88.000000000000014" width="414" height="201.33333333333337"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="Zgg-td-bdq">
-                                        <rect key="frame" x="135" y="26.000000000000007" width="144" height="98.666666666666686"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-1234-1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08x-ru-dk7">
-                                        <rect key="frame" x="125" y="147.66666666666666" width="164" height="26.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qyd-3H-kcO">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="161.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="Zgg-td-bdq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-1234-1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08x-ru-dk7">
+                                                <rect key="frame" x="0.0" y="97" width="414" height="64.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zgg-td-bdq" firstAttribute="height" secondItem="qyd-3H-kcO" secondAttribute="height" multiplier="0.6" id="HLt-aG-nxG"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.5607843137254902" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Zgg-td-bdq" firstAttribute="top" secondItem="D2l-cH-lnh" secondAttribute="top" constant="26" id="91c-LM-g7g"/>
-                                    <constraint firstItem="08x-ru-dk7" firstAttribute="top" secondItem="Zgg-td-bdq" secondAttribute="bottom" constant="23" id="LFO-iY-rHP"/>
-                                    <constraint firstItem="Zgg-td-bdq" firstAttribute="leading" secondItem="D2l-cH-lnh" secondAttribute="leading" constant="135" id="SIO-X6-h6h"/>
-                                    <constraint firstAttribute="trailing" secondItem="08x-ru-dk7" secondAttribute="trailing" constant="125" id="bPe-Mi-Q9F"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zgg-td-bdq" secondAttribute="trailing" constant="135" id="fns-E0-gua"/>
-                                    <constraint firstAttribute="bottom" secondItem="08x-ru-dk7" secondAttribute="bottom" constant="27" id="izO-Op-XmP"/>
-                                    <constraint firstItem="08x-ru-dk7" firstAttribute="leading" secondItem="D2l-cH-lnh" secondAttribute="leading" constant="125" id="leh-Uf-tdE"/>
+                                    <constraint firstAttribute="bottom" secondItem="qyd-3H-kcO" secondAttribute="bottom" id="B7N-kG-a2V"/>
+                                    <constraint firstItem="qyd-3H-kcO" firstAttribute="leading" secondItem="D2l-cH-lnh" secondAttribute="leading" id="THh-86-eVv"/>
+                                    <constraint firstItem="qyd-3H-kcO" firstAttribute="top" secondItem="D2l-cH-lnh" secondAttribute="top" constant="40" id="emG-WW-fSP"/>
+                                    <constraint firstAttribute="trailing" secondItem="qyd-3H-kcO" secondAttribute="trailing" id="w0K-1v-qvz"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-zI-H5b">
@@ -222,13 +226,14 @@
                         <outlet property="influence" destination="2e0-CE-KBl" id="7JU-Jb-ggH"/>
                         <outlet property="phoneNum" destination="08x-ru-dk7" id="jil-z5-C0m"/>
                         <outlet property="userAsset" destination="BRI-Lz-1nY" id="8N3-XO-9NS"/>
+                        <outlet property="userImage" destination="Zgg-td-bdq" id="Pqr-N1-dLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuU-zN-vZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1208.6956521739132" y="-164.0625"/>
         </scene>
-        <!--View Controller-->
+        <!--기부마켓-->
         <scene sceneID="r2g-9O-3oc">
             <objects>
                 <viewController id="LuP-ol-Qkh" sceneMemberID="viewController">
@@ -247,7 +252,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="385"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-5C-Jvb">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exImage" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-5C-Jvb">
                                                     <rect key="frame" x="36" y="27" width="342" height="215"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-g9-BRR">
@@ -321,7 +326,7 @@ Lorem ipsum Lorem ipsum Lorem</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ByW-Xh-dbQ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="B5R-bV-m5T"/>
+                    <navigationItem key="navigationItem" title="기부마켓" id="B5R-bV-m5T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKg-dP-dMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,14 +354,14 @@ Lorem ipsum Lorem ipsum Lorem</string>
         </scene>
     </scenes>
     <resources>
-        <image name="14 – 1" width="314" height="215"/>
         <image name="23 – 1" width="16" height="16"/>
         <image name="24 – 1" width="17.666666030883789" height="20.333333969116211"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
+        <image name="exImage" width="314" height="215"/>
         <image name="library" width="20.333333969116211" height="20.666666030883789"/>
         <image name="person.crop.circle" catalog="system" width="64" height="62"/>
         <image name="person.crop.circle.fill" catalog="system" width="64" height="62"/>
         <image name="shopping-cart" width="17.666666030883789" height="17"/>
-        <image name="user3" width="34" height="34"/>
+        <image name="userImage" width="300" height="300"/>
     </resources>
 </document>

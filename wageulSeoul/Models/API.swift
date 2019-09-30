@@ -70,4 +70,15 @@ class API{
             }
         }
     }
+    
+    func delete(complete:@escaping (_ returns: NSDictionary) -> Void){
+        let url = URL(string: "https://wageul.heewon.dev/api\(self.endPoint)")!
+        Alamofire.request(url, method: .delete, parameters: [:], encoding: URLEncoding.default, headers: self.header)
+            .responseJSON { (response) in
+            if response.result.value != nil
+            {
+                complete(response.result.value as! NSDictionary)
+            }
+        }
+    }
 }

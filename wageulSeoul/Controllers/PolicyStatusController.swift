@@ -19,7 +19,6 @@ class PolicyStatusController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabelView.estimatedRowHeight = 88
         let api = API(endPoint: "/policy", token: "Bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
         api.get() { (reviews) in
             self.data = reviews
