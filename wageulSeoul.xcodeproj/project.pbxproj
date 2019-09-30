@@ -29,6 +29,8 @@
 		90B831C8233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */; };
 		90B831CA234034950045BCCC /* PolicyStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B831C9234034950045BCCC /* PolicyStatusInfo.swift */; };
 		90C85175233413F4002181EF /* PhoneNumCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85174233413F4002181EF /* PhoneNumCheckController.swift */; };
+		90F0F5DF2341D55C00C4C0FD /* PolicyProposalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0F5DE2341D55C00C4C0FD /* PolicyProposalsTableViewCell.swift */; };
+		90F0F5E12341D8FC00C4C0FD /* PolicyProposalsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0F5E02341D8FC00C4C0FD /* PolicyProposalsInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PolicyStatusTableViewCell.swift; path = wageulSeoul/Models/PolicyStatusTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		90B831C9234034950045BCCC /* PolicyStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyStatusInfo.swift; sourceTree = "<group>"; };
 		90C85174233413F4002181EF /* PhoneNumCheckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumCheckController.swift; sourceTree = "<group>"; };
+		90F0F5DE2341D55C00C4C0FD /* PolicyProposalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyProposalsTableViewCell.swift; sourceTree = "<group>"; };
+		90F0F5E02341D8FC00C4C0FD /* PolicyProposalsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyProposalsInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				90B831C5233FC4F60045BCCC /* UserInfoData.swift */,
 				90B831C7233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift */,
 				90B831C9234034950045BCCC /* PolicyStatusInfo.swift */,
+				90F0F5DE2341D55C00C4C0FD /* PolicyProposalsTableViewCell.swift */,
+				90F0F5E02341D8FC00C4C0FD /* PolicyProposalsInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,8 +250,10 @@
 				905877CD231FDDBB00B8E3D1 /* AppDelegate.swift in Sources */,
 				906E330E233D08D200849299 /* LoginTest.swift in Sources */,
 				90401A6B23242502008825B0 /* PolicyProposalsController.swift in Sources */,
+				90F0F5E12341D8FC00C4C0FD /* PolicyProposalsInfo.swift in Sources */,
 				90401A692324229C008825B0 /* PolicyStatusController.swift in Sources */,
 				90401A7123243E0D008825B0 /* IDVerificationController.swift in Sources */,
+				90F0F5DF2341D55C00C4C0FD /* PolicyProposalsTableViewCell.swift in Sources */,
 				90B831C6233FC4F60045BCCC /* UserInfoData.swift in Sources */,
 				90B831C8233FE6AB0045BCCC /* PolicyStatusTableViewCell.swift in Sources */,
 				906E330C233CB80400849299 /* API.swift in Sources */,

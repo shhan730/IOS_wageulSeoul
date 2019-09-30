@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,8 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11 – 1" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-Tc-av4">
-                                <rect key="frame" x="114" y="169" width="186" height="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-Tc-av4">
+                                <rect key="frame" x="79" y="338" width="256" height="73"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울시 정책제안 와글와글" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEm-SE-nzm">
                                 <rect key="frame" x="100" y="662" width="214" height="24"/>
@@ -56,13 +55,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YqC-Tc-av4" firstAttribute="top" secondItem="JrI-nD-IOh" secondAttribute="top" constant="81" id="8wO-aa-Ykf"/>
+                            <constraint firstItem="YqC-Tc-av4" firstAttribute="top" secondItem="JrI-nD-IOh" secondAttribute="top" constant="250" id="8wO-aa-Ykf"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="yBf-FU-Wn6" secondAttribute="trailing" constant="15" id="AAl-Fa-Z0g"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="df6-lu-hhL" secondAttribute="trailing" constant="93" id="IZJ-XI-d3P"/>
-                            <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="YqC-Tc-av4" secondAttribute="trailing" constant="114" id="M0H-yS-efF"/>
+                            <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="YqC-Tc-av4" secondAttribute="trailing" constant="79" id="M0H-yS-efF"/>
                             <constraint firstItem="yBf-FU-Wn6" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="15" id="QNX-Mp-IqF"/>
                             <constraint firstItem="yBf-FU-Wn6" firstAttribute="top" secondItem="df6-lu-hhL" secondAttribute="bottom" constant="45" id="SLR-e7-q32"/>
-                            <constraint firstItem="YqC-Tc-av4" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="114" id="Ud9-yE-HIW"/>
+                            <constraint firstItem="YqC-Tc-av4" firstAttribute="leading" secondItem="JrI-nD-IOh" secondAttribute="leading" constant="79" id="Ud9-yE-HIW"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="trailing" secondItem="FEm-SE-nzm" secondAttribute="trailing" constant="100" id="VZX-A5-Aze"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="bottom" secondItem="FEm-SE-nzm" secondAttribute="bottom" constant="176" id="Vbh-AB-L8Y"/>
                             <constraint firstItem="JrI-nD-IOh" firstAttribute="bottom" secondItem="yBf-FU-Wn6" secondAttribute="bottom" constant="26" id="VgM-0i-2hh"/>
@@ -201,7 +200,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ldB-s7-8O2">
                                 <rect key="frame" x="38" y="199" width="338" height="174.66666666666663"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력하신 전화번호로 전송받은 6자리 인증번호를 입력해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1T-Su-OHQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력하신 전화번호로 전송받은 6자리 인증번호를 입력해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1T-Su-OHQ">
                                         <rect key="frame" x="9" y="0.0" width="320" height="41.666666666666664"/>
                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,6 +280,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="11 – 1" width="146" height="44"/>
+        <image name="Logo" width="216" height="73"/>
     </resources>
 </document>

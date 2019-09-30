@@ -39,40 +39,40 @@
                                 <rect key="frame" x="0.0" y="126.5" width="414" height="686.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="87.5" id="Oz2-q8-KcJ" customClass="PolicyStatusTableViewCell" customModule="wageulSeoul" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="87.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusCell" rowHeight="103" id="Oz2-q8-KcJ" customClass="PolicyStatusTableViewCell" customModule="wageulSeoul" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oz2-q8-KcJ" id="Kpe-EP-V5Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="x6i-xk-7hs">
-                                                    <rect key="frame" x="20" y="11" width="374" height="70"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="82.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2030 서울시 공원녹지 기본계획(변경) 확정 및 공고" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-hL-ZoL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="52"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="61"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="moD-ch-kyi">
-                                                            <rect key="frame" x="0.0" y="52" width="374" height="18"/>
+                                                            <rect key="frame" x="0.0" y="61" width="374" height="21.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환경" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0t-IU-lcY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="21.5"/>
                                                                     <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공원녹화&gt;공원녹화수행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA8-Ao-U1q">
-                                                                    <rect key="frame" x="103.5" y="0.0" width="168.5" height="18"/>
+                                                                    <rect key="frame" x="103.5" y="0.0" width="168.5" height="21.5"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-Nt-gih">
-                                                                    <rect key="frame" x="282" y="0.0" width="18.5" height="18"/>
+                                                                    <rect key="frame" x="282" y="0.0" width="18.5" height="21.5"/>
                                                                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
                                                                     <connections>
@@ -80,20 +80,20 @@
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-0g-rVa">
-                                                                    <rect key="frame" x="310.5" y="0.0" width="19.5" height="18"/>
+                                                                    <rect key="frame" x="310.5" y="0.0" width="19.5" height="21.5"/>
                                                                     <state key="normal" title="Button" image="ic_favorite"/>
                                                                     <connections>
                                                                         <action selector="heartButtonClick:" destination="Oz2-q8-KcJ" eventType="touchUpInside" id="HFe-dH-en7"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="421" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
-                                                                    <rect key="frame" x="340" y="0.0" width="19" height="18"/>
+                                                                    <rect key="frame" x="340" y="0.0" width="19" height="21.5"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ1-c5-DSO">
-                                                                    <rect key="frame" x="355.5" y="0.0" width="18.5" height="18"/>
+                                                                    <rect key="frame" x="355.5" y="0.0" width="18.5" height="21.5"/>
                                                                     <state key="normal" title="Button" image="icons8-share-rounded-96"/>
                                                                 </button>
                                                             </subviews>
