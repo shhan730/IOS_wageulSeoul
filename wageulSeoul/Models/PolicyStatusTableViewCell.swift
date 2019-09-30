@@ -9,6 +9,9 @@
 import UIKit
 
 class PolicyStatusTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var cellView: UIView!
 
     @IBOutlet weak var title: UILabel!
     
@@ -20,9 +23,18 @@ class PolicyStatusTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heartButton: UIButton!
     
+    var url: String = ""
+    
+    @IBAction func moveToInfo(_ sender: UIButton) {
+        if let url = URL(string: self.url) {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
     var heartButtonActive: Bool = false
     
     var id: Int = 0
+    
     
     func setCell(policyStatusInfo: PolicyStatusInfo){
         self.title.text = policyStatusInfo.title
@@ -31,6 +43,7 @@ class PolicyStatusTableViewCell: UITableViewCell {
         self.heartNum.text = policyStatusInfo.heartNum
         self.heartButtonActive = policyStatusInfo.isHeartClicked
         self.id = policyStatusInfo.id
+        self.url = policyStatusInfo.url
         
         self.checkHeartButtonisActive()
         
@@ -59,6 +72,8 @@ class PolicyStatusTableViewCell: UITableViewCell {
         self.checkHeartButtonisActive()
         
     }
+    
+    
     
     func checkHeartButtonisActive(){
         if self.heartButtonActive{

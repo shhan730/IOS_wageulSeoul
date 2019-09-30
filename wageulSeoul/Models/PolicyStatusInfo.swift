@@ -17,14 +17,16 @@ class PolicyStatusInfo{
     var heartNum: String
     var isHeartClicked: Bool
     var id: Int
+    var url: String
     
-    init(title: String, catTag:String, subTitle:String,heartNum: String, isHeartClicked: Bool, id: Int) {
+    init(title: String, catTag:String, subTitle:String,heartNum: String, isHeartClicked: Bool, id: Int, url: String) {
         self.title = title
         self.catTag = catTag
         self.subTitle = subTitle
         self.heartNum = heartNum
         self.isHeartClicked = isHeartClicked
         self.id = id
+        self.url = url
     }
 }
 

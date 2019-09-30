@@ -49,7 +49,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="x6i-xk-7hs">
                                                     <rect key="frame" x="20" y="11" width="374" height="70"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2030 서울시 공원녹지 기본계획(변경) 확정 및 공고" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-hL-ZoL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2030 서울시 공원녹지 기본계획(변경) 확정 및 공고" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-hL-ZoL">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="52"/>
                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -66,20 +66,28 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공원녹화&gt;공원녹화수행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA8-Ao-U1q">
-                                                                    <rect key="frame" x="103.5" y="0.0" width="187" height="18"/>
+                                                                    <rect key="frame" x="103.5" y="0.0" width="168.5" height="18"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-Nt-gih">
+                                                                    <rect key="frame" x="282" y="0.0" width="18.5" height="18"/>
+                                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="moveToInfo:" destination="Oz2-q8-KcJ" eventType="touchUpInside" id="lA9-dn-25o"/>
+                                                                    </connections>
+                                                                </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-0g-rVa">
-                                                                    <rect key="frame" x="300.5" y="0.0" width="19.5" height="18"/>
+                                                                    <rect key="frame" x="310.5" y="0.0" width="19.5" height="18"/>
                                                                     <state key="normal" title="Button" image="ic_favorite"/>
                                                                     <connections>
                                                                         <action selector="heartButtonClick:" destination="Oz2-q8-KcJ" eventType="touchUpInside" id="HFe-dH-en7"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="421" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dre-Je-leT">
-                                                                    <rect key="frame" x="330" y="0.0" width="19" height="18"/>
+                                                                    <rect key="frame" x="340" y="0.0" width="19" height="18"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="10"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -92,7 +100,8 @@
                                                             <constraints>
                                                                 <constraint firstItem="n0t-IU-lcY" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.25" id="3YU-Qe-V36"/>
                                                                 <constraint firstItem="dgT-0g-rVa" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" constant="1" id="OpN-AC-gHL"/>
-                                                                <constraint firstItem="OA8-Ao-U1q" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.5" id="Qgb-HL-zv0"/>
+                                                                <constraint firstItem="OA8-Ao-U1q" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.45" id="Qgb-HL-zv0"/>
+                                                                <constraint firstItem="Xpi-Nt-gih" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="XIy-LA-eC3"/>
                                                                 <constraint firstItem="YJ1-c5-DSO" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="pje-Uk-T9Z"/>
                                                                 <constraint firstItem="Dre-Je-leT" firstAttribute="width" secondItem="moD-ch-kyi" secondAttribute="width" multiplier="0.05" id="rxg-As-DfZ"/>
                                                             </constraints>
@@ -106,6 +115,7 @@
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="x6i-xk-7hs" firstAttribute="leading" secondItem="Kpe-EP-V5Y" secondAttribute="leadingMargin" id="1kJ-jr-Kqm"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="x6i-xk-7hs" secondAttribute="bottom" id="5jI-EB-HxG"/>
@@ -114,8 +124,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="x6i-xk-7hs" secondAttribute="trailing" id="r4W-te-dfc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="catTag" destination="n0t-IU-lcY" id="80Q-Fi-GAE"/>
+                                            <outlet property="cellView" destination="Kpe-EP-V5Y" id="qKe-RS-oKF"/>
                                             <outlet property="heartButton" destination="dgT-0g-rVa" id="7Nx-8E-M8X"/>
                                             <outlet property="heartNum" destination="Dre-Je-leT" id="n8S-LB-CdM"/>
                                             <outlet property="subTitile" destination="OA8-Ao-U1q" id="qZM-P8-SzD"/>
@@ -169,6 +181,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
         <image name="doc.text" catalog="system" width="56" height="64"/>
         <image name="doc.text.fill" catalog="system" width="56" height="64"/>
         <image name="ic_favorite" width="24" height="24"/>

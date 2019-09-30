@@ -38,7 +38,7 @@ class PolicyStatusController: UIViewController {
             let i = item as! NSDictionary
             //print(i["id"]!)
             
-            let tempCell = PolicyStatusInfo.init(title: String(format: "%@", i["title"]! as! CVarArg), catTag: String(format: "%@", i["tag"]! as! CVarArg), subTitle: String(format: "%@", i["write"]! as! CVarArg), heartNum: String(format: "%@", i["heart"]! as! CVarArg), isHeartClicked: i["given"]! as! Bool, id: i["id"]! as! Int)
+            let tempCell = PolicyStatusInfo.init(title: String(format: "%@", i["title"]! as! CVarArg), catTag: String(format: "%@", i["tag"]! as! CVarArg), subTitle: String(format: "%@", i["write"]! as! CVarArg), heartNum: String(format: "%@", i["heart"]! as! CVarArg), isHeartClicked: i["given"]! as! Bool, id: i["id"]! as! Int, url: String(format: "%@", i["url"]! as! CVarArg))
             tempArray.append(tempCell)
             
         }
