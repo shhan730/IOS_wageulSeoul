@@ -19,9 +19,9 @@ class API{
     var header:HTTPHeaders
     var body:[String:String] = [:]
     
-    init(endPoint: String, authToken:String, id: Int){
+    init(endPoint: String, authToken:String){
         self.endPoint = endPoint
-        self.header = ["Content-Type":"application/x-www-form-urlencoded", "Accept":"application/json", "id": String(id)]
+        self.header = ["Content-Type":"application/x-www-form-urlencoded", "Accept":"application/json", "Authorization" : authToken]
     }
     
     init(endPoint: String, code: String, phone: String){
@@ -51,6 +51,7 @@ class API{
     
     func get(complete:@escaping (_ returns: NSDictionary) -> Void){
         let url = URL(string: "https://wageul.heewon.dev/api\(self.endPoint)")!
+        print(url)
         Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: self.header)
             .responseJSON { (response) in
             if response.result.value != nil
@@ -63,6 +64,28 @@ class API{
     func post(complete:@escaping (_ returns: NSDictionary) -> Void){
         let url = URL(string: "https://wageul.heewon.dev/api\(self.endPoint)")!
         Alamofire.request(url, method: .post, parameters: self.body, headers: header)
+            .responseJSON { (response) in
+            if response.result.value != nil
+            {
+                complete(response.result.value as! NSDictionary)
+            }
+        }
+    }
+    
+    func delete(complete:@escaping (_ returns: NSDictionary) -> Void){
+        let url = URL(string: "https://wageul.heewon.dev/api\(self.endPoint)")!
+        Alamofire.request(url, method: .delete, parameters: self.body, headers: header)
+            .responseJSON { (response) in
+            if response.result.value != nil
+            {
+                complete(response.result.value as! NSDictionary)
+            }
+        }
+    }
+    
+    func set(complete:@escaping (_ returns: NSDictionary) -> Void){
+        let url = URL(string: "https://wageul.heewon.dev/api\(self.endPoint)")!
+        Alamofire.request(url, method: .put, parameters: self.body, headers: header)
             .responseJSON { (response) in
             if response.result.value != nil
             {

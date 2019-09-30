@@ -43,9 +43,15 @@ class PolicyStatusTableViewCell: UITableViewCell {
         if self.heartButtonActive == true {
             self.heartButtonActive = false
             self.heartNum.text = String(Int(self.heartNum.text!)! - 1)
+            let api = API(endPoint: "/policy/\(id)/heart", authToken: "bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
+            api.delete(){
+                (reviews) in
+                print(reviews)
+            }
+            
         }
         else {
-            let api = API(endPoint: "/policy/\(id)/heart", authToken: "bearer \(UserDefaults.standard.value(forKey: "token") as! String)", id: id)
+            let api = API(endPoint: "/policy/\(id)/heart", authToken: "bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
             api.get(){
                 (reviews) in
                 print(reviews)
