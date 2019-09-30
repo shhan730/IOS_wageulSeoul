@@ -12,17 +12,15 @@ import UIKit
 
 class PolicyStatusInfo{
     var title: String
-    var tag1: String
-    var tag2: String
+    var catTag: String
     var subTitle: String
     var heartNum: String
     var isHeartClicked: Bool
     var id: Int
     
-    init(title: String, tag1:String, tag2:String, subTitle:String,heartNum: String, isHeartClicked: Bool, id: Int) {
+    init(title: String, catTag:String, subTitle:String,heartNum: String, isHeartClicked: Bool, id: Int) {
         self.title = title
-        self.tag1 = tag1
-        self.tag2 = tag2
+        self.catTag = catTag
         self.subTitle = subTitle
         self.heartNum = heartNum
         self.isHeartClicked = isHeartClicked

@@ -12,9 +12,7 @@ class PolicyStatusTableViewCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
     
-    @IBOutlet weak var tag1: UILabel!
-    
-    @IBOutlet weak var tag2: UILabel!
+    @IBOutlet var catTag: UILabel!
     
     @IBOutlet weak var subTitile: UILabel!
     
@@ -28,8 +26,7 @@ class PolicyStatusTableViewCell: UITableViewCell {
     
     func setCell(policyStatusInfo: PolicyStatusInfo){
         self.title.text = policyStatusInfo.title
-        self.tag1.text = policyStatusInfo.tag1
-        self.tag2.text = policyStatusInfo.tag2
+        self.catTag.text = policyStatusInfo.catTag
         self.subTitile.text = policyStatusInfo.subTitle
         self.heartNum.text = policyStatusInfo.heartNum
         self.heartButtonActive = policyStatusInfo.isHeartClicked
