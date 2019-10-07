@@ -22,7 +22,7 @@ This Service will encourage active community and political participation by prov
 
 
 
-####:page_facing_up: Policy Status(정책현황)
+#### :page_facing_up: Policy Status(정책현황)
 
 The Policy Status panel provides information about the policies of the region in which the user resides and allows the user to evaluate them.
 
@@ -46,9 +46,9 @@ In the Reward Market, user can sponsor public service campaigns using rewards or
 
 
 
-<img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/Register.png" alt="Register" style="zoom:20%;" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" style="zoom:20%;" />
+<img src="./README_Images/Register.png" alt="Register" style="zoom:20%;" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" style="zoom:20%;" />
 
-<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" style="zoom:20%;" /> <img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/UserInfo.png" alt="UserInfo" style="zoom:20%;" />
+<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" style="zoom:20%;" /> <img src="./README_Images/UserInfo.png" alt="UserInfo" style="zoom:20%;" />
 
 
 
