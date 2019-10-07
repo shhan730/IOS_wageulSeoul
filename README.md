@@ -6,7 +6,9 @@
 
 
 
+
 <img src="./README_Images/Logo@3x.png" alt="Logo@3x" style="zoom:40%;" />
+
 
 
 
@@ -46,9 +48,9 @@ In the Reward Market, user can sponsor public service campaigns using rewards or
 
 
 
-<img src="./README_Images/Register.png" alt="Register" width="30%"; /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" width="30%"; />
+<img src="./README_Images/Register.png" alt="Register" width="40%" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" width="40%" />
 
-<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" width="30%"; /> <img src="./README_Images/UserInfo.png" alt="UserInfo" width="30%"; />
+<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" width="40%" /> <img src="./README_Images/UserInfo.png" alt="UserInfo" width="40%" />
 
 
 
