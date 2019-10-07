@@ -98,3 +98,23 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 
 If you have any questions feel free to contact us!
 
+
+
+## :office: Whois NAVER D2 
+
+
+
+The platform was produced by a team of members of Ajou University Information Security Club Whois.
+
+These achievements are based on what we have learned from NAVER D2's study group support.
+
+Thanks to Whois members and NAVER D2 for helping us make great results.
+
+
+
+해당 플랫폼은 아주대학교 정보보안소학회 Whois 회원들로 구성된 팀에서 제작되었습니다.
+
+해당 실적물은 NAVER D2의 스터디그룹 지원을 통해 학습한 내용을 바탕으로 제작되었습니다.
+
+좋은 결과를 만들 수 있도록 지원해주신 Whois 회원분들과 NAVER D2 에게 감사드립니다.
+
