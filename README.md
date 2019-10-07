@@ -2,8 +2,7 @@
 
 > **The People’s Online Petition & Discussion Platform**
 
-![badge](https://img.shields.io/github/license/:shhan730/:IOS_wageulSeoul) ![badge](https://img.shields.io/github/languages/top/:shhan730/:IOS_wageulSeoul)![badge](https://img.shields.io/badge/version- iOS 13.1 / Swift 5.1-lightgrey)
-
+![badge](https://img.shields.io/badge/license-MIT-red.svg) ![badge](https://img.shields.io/badge/language-Swift-red.svg) ![badge](https://img.shields.io/badge/version-iOS13.1/Swift5.1-lightgrey.svg)
 
 
 
@@ -67,7 +66,7 @@ In the Reward Market, user can sponsor public service campaigns using rewards or
 
 
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
 
 
 
