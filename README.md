@@ -6,7 +6,7 @@
 
 
 
-<img src="./README_Images/Logo@3x.png" alt="Logo@3x" style="zoom:60%;" />
+<img src="./README_Images/Logo@3x.png" alt="Logo@3x" style="zoom:40%;" />
 
 
 
@@ -46,9 +46,9 @@ In the Reward Market, user can sponsor public service campaigns using rewards or
 
 
 
-<img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/Register.png" alt="Register" style="zoom:30%;" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" style="zoom:30%;" />
+<img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/Register.png" alt="Register" style="zoom:20%;" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" style="zoom:20%;" />
 
-<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" style="zoom:30%;" /> <img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/UserInfo.png" alt="UserInfo" style="zoom:30%;" />
+<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" style="zoom:20%;" /> <img src="/Users/hanseunghun/Desktop/IOS_wageulSeoul/README_Images/UserInfo.png" alt="UserInfo" style="zoom:20%;" />
 
 
 
