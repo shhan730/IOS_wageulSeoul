@@ -46,9 +46,9 @@ In the Reward Market, user can sponsor public service campaigns using rewards or
 
 
 
-<img src="./README_Images/Register.png" alt="Register" style="zoom:20%;" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" style="zoom:20%;" />
+<img src="./README_Images/Register.png" alt="Register" width="30%";" /><img src="./README_Images/PolicyStatus.png" alt="PolicyStatus" width="30%";" />
 
-<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" style="zoom:20%;" /> <img src="./README_Images/UserInfo.png" alt="UserInfo" style="zoom:20%;" />
+<img src="./README_Images/PolicyProposals.png" alt="PolicyProposals" width="30%";" /> <img src="./README_Images/UserInfo.png" alt="UserInfo" width="30%";" />
 
 
 
