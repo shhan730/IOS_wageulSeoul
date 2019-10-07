@@ -2,7 +2,7 @@
 
 > **The People’s Online Petition & Discussion Platform**
 
-![badge](https://img.shields.io/github/license/:user/:repo) ![badge](https://img.shields.io/github/languages/top/:user/:repo)![badge](https://img.shields.io/badge/version- iOS 13.1 / Swift 5.1-lightgrey)
+![badge](https://img.shields.io/github/license/:shhan730/:IOS_wageulSeoul) ![badge](https://img.shields.io/github/languages/top/:shhan730/:IOS_wageulSeoul)![badge](https://img.shields.io/badge/version- iOS 13.1 / Swift 5.1-lightgrey)
 
 
 
