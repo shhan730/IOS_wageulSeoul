@@ -7,7 +7,7 @@
 
 
 
-<img src="./README_Images/Logo@3x.png" alt="Logo@3x" style="zoom:40%;" />
+<img src="./README_Images/Logo@3x.png" alt="Logo@3x" width="50%" />
 
 
 
@@ -91,7 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.
 
 
 
-###**Seung Hun Han**(한승훈) - dev.shhan@gmail.com
+### **Seung Hun Han**(한승훈) - dev.shhan@gmail.com
 
 #### Suwon, Republic of Korea
 
