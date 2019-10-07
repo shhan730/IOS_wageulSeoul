@@ -17,6 +17,8 @@ class PolicyProposalsController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let api = API(endPoint: "/opinion", token: "bearer \(UserDefaults.standard.value(forKey: "token") as! String)")
@@ -29,6 +31,9 @@ class PolicyProposalsController: UIViewController {
             
         }
     }
+    
+    
+    
     
     func createArray() -> [PolicyProposalsInfo]{
            

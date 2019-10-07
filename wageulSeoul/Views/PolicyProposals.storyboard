@@ -43,76 +43,96 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="V9n-p9-81U">
-                                                    <rect key="frame" x="36" y="27" width="34" height="34"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94N-Y3-sUG">
-                                                    <rect key="frame" x="76" y="27" width="28" height="22.5"/>
-                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 min ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-Pn-vIY">
-                                                    <rect key="frame" x="76" y="44.5" width="50" height="16.5"/>
-                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문 대통령 “한·미얀마 경협산단, 양국 정부 협력 모범사례”" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZK-YK-KXs">
-                                                    <rect key="frame" x="36" y="75" width="287" height="18"/>
-                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exImage" translatesAutoresizingMaskIntoConstraints="NO" id="mwz-RI-JBW">
-                                                    <rect key="frame" x="36" y="102" width="342" height="215"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2sC-OZ-YxC">
-                                                    <rect key="frame" x="36" y="329" width="342" height="24"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oBB-Qq-he5">
+                                                    <rect key="frame" x="30" y="21" width="354" height="326"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spacedHeart" translatesAutoresizingMaskIntoConstraints="NO" id="vro-cW-IwK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="79.5" height="24"/>
-                                                            <color key="tintColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-X9-whl">
-                                                            <rect key="frame" x="87.5" y="2" width="79.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5Em-Og-2bc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user3" translatesAutoresizingMaskIntoConstraints="NO" id="V9n-p9-81U">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="34"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94N-Y3-sUG">
+                                                                    <rect key="frame" x="41.5" y="0.0" width="35.5" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 min ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-Pn-vIY">
+                                                                    <rect key="frame" x="83" y="0.0" width="271" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="11"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="V9n-p9-81U" firstAttribute="width" secondItem="5Em-Og-2bc" secondAttribute="width" multiplier="0.1" id="Nhs-Js-V1m"/>
+                                                                <constraint firstItem="94N-Y3-sUG" firstAttribute="width" secondItem="5Em-Og-2bc" secondAttribute="width" multiplier="0.1" id="TdP-NT-lS9"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문 대통령 “한·미얀마 경협산단, 양국 정부 협력 모범사례”" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZK-YK-KXs">
+                                                            <rect key="frame" x="0.0" y="44" width="354" height="18"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chat" translatesAutoresizingMaskIntoConstraints="NO" id="Ay3-Yj-och">
-                                                            <rect key="frame" x="175" y="0.0" width="79.5" height="24"/>
-                                                            <color key="tintColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exImage" translatesAutoresizingMaskIntoConstraints="NO" id="mwz-RI-JBW">
+                                                            <rect key="frame" x="0.0" y="72" width="354" height="215"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ko-vr-tRO">
-                                                            <rect key="frame" x="262.5" y="2" width="79.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2sC-OZ-YxC">
+                                                            <rect key="frame" x="0.0" y="297" width="177" height="29"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNQ-OC-Wch">
+                                                                    <rect key="frame" x="0.0" y="2.5" width="35.5" height="24"/>
+                                                                    <state key="normal" image="spacedHeart">
+                                                                        <attributedString key="attributedTitle"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="heartbutton:" destination="RMC-gu-fa5" eventType="touchUpInside" id="oRa-LH-uab"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-X9-whl">
+                                                                    <rect key="frame" x="43.5" y="4.5" width="35.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruE-1t-f5K">
+                                                                    <rect key="frame" x="87" y="2.5" width="35" height="24"/>
+                                                                    <state key="normal" image="ic_chat"/>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ko-vr-tRO">
+                                                                    <rect key="frame" x="141.5" y="4.5" width="35.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="XNQ-OC-Wch" firstAttribute="width" secondItem="2sC-OZ-YxC" secondAttribute="width" multiplier="0.2" id="W4q-9X-tl7"/>
+                                                                <constraint firstItem="7ko-vr-tRO" firstAttribute="width" secondItem="2sC-OZ-YxC" secondAttribute="width" multiplier="0.2" id="aPj-mv-3T1"/>
+                                                                <constraint firstItem="pxY-X9-whl" firstAttribute="width" secondItem="2sC-OZ-YxC" secondAttribute="width" multiplier="0.2" id="aZi-gC-wRT"/>
+                                                                <constraint firstItem="ruE-1t-f5K" firstAttribute="width" secondItem="2sC-OZ-YxC" secondAttribute="width" multiplier="0.2" id="dFI-Vl-6Vw"/>
+                                                            </constraints>
+                                                        </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="2sC-OZ-YxC" firstAttribute="width" secondItem="oBB-Qq-he5" secondAttribute="width" multiplier="0.5" id="66Y-He-pJv"/>
+                                                        <constraint firstItem="5Em-Og-2bc" firstAttribute="width" secondItem="oBB-Qq-he5" secondAttribute="width" id="ZG0-60-IwL"/>
+                                                        <constraint firstItem="9ZK-YK-KXs" firstAttribute="width" secondItem="oBB-Qq-he5" secondAttribute="width" id="rub-bc-bJR"/>
+                                                        <constraint firstItem="mwz-RI-JBW" firstAttribute="width" secondItem="oBB-Qq-he5" secondAttribute="width" id="yja-Qs-hIe"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="mwz-RI-JBW" firstAttribute="top" secondItem="9ZK-YK-KXs" secondAttribute="bottom" constant="9" id="2jc-im-Ddt"/>
-                                                <constraint firstItem="94N-Y3-sUG" firstAttribute="leading" secondItem="V9n-p9-81U" secondAttribute="trailing" constant="6" id="3uc-e0-A4m"/>
-                                                <constraint firstItem="V9n-p9-81U" firstAttribute="top" secondItem="0cO-bL-P3S" secondAttribute="topMargin" constant="16" id="3vY-0z-GKk"/>
-                                                <constraint firstItem="9ZK-YK-KXs" firstAttribute="leading" secondItem="V9n-p9-81U" secondAttribute="leading" id="DMV-Av-sUv"/>
-                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="mwz-RI-JBW" secondAttribute="trailing" constant="16" id="EB6-kK-073"/>
-                                                <constraint firstItem="2sC-OZ-YxC" firstAttribute="trailing" secondItem="mwz-RI-JBW" secondAttribute="trailing" id="SSP-nG-Wv7"/>
-                                                <constraint firstItem="2sC-OZ-YxC" firstAttribute="top" secondItem="mwz-RI-JBW" secondAttribute="bottom" constant="12" id="UQA-SI-eSQ"/>
-                                                <constraint firstItem="9ZK-YK-KXs" firstAttribute="top" secondItem="V9n-p9-81U" secondAttribute="bottom" constant="14" id="VZn-Ke-ft2"/>
-                                                <constraint firstItem="2sC-OZ-YxC" firstAttribute="leading" secondItem="mwz-RI-JBW" secondAttribute="leading" id="omx-1W-Utq"/>
-                                                <constraint firstItem="nOk-Pn-vIY" firstAttribute="bottom" secondItem="V9n-p9-81U" secondAttribute="bottom" id="orm-Ov-CFV"/>
-                                                <constraint firstItem="94N-Y3-sUG" firstAttribute="top" secondItem="V9n-p9-81U" secondAttribute="top" id="pFA-uN-G94"/>
-                                                <constraint firstItem="94N-Y3-sUG" firstAttribute="leading" secondItem="nOk-Pn-vIY" secondAttribute="leading" id="wfc-RT-B7a"/>
-                                                <constraint firstItem="V9n-p9-81U" firstAttribute="leading" secondItem="0cO-bL-P3S" secondAttribute="leadingMargin" constant="16" id="wyQ-vr-WYn"/>
-                                                <constraint firstItem="mwz-RI-JBW" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0cO-bL-P3S" secondAttribute="leadingMargin" constant="16" id="xbK-9r-K9U"/>
+                                                <constraint firstItem="oBB-Qq-he5" firstAttribute="leading" secondItem="0cO-bL-P3S" secondAttribute="leadingMargin" constant="10" id="K1w-mR-68b"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="oBB-Qq-he5" secondAttribute="bottom" constant="10" id="Oxi-oB-puU"/>
+                                                <constraint firstItem="oBB-Qq-he5" firstAttribute="top" secondItem="0cO-bL-P3S" secondAttribute="topMargin" constant="10" id="bAx-Z1-0Az"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oBB-Qq-he5" secondAttribute="trailing" constant="10" id="zsM-nN-nVE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentNum" destination="7ko-vr-tRO" id="whW-cQ-fY5"/>
-                                            <outlet property="heartImage" destination="vro-cW-IwK" id="agg-lS-Ekh"/>
                                             <outlet property="heartNum" destination="pxY-X9-whl" id="Dbm-uD-DFD"/>
                                             <outlet property="mainImage" destination="mwz-RI-JBW" id="VXP-1V-1BT"/>
                                             <outlet property="timeStamp" destination="nOk-Pn-vIY" id="QRz-mN-NNA"/>
@@ -185,18 +205,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-Nh-HwR">
                                 <rect key="frame" x="16" y="411.5" width="382" height="24"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spacedHeart" translatesAutoresizingMaskIntoConstraints="NO" id="18u-PC-CFC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZh-Xr-ppN">
                                         <rect key="frame" x="0.0" y="0.0" width="89.5" height="24"/>
-                                    </imageView>
+                                        <state key="normal" image="spacedHeart">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQJ-0H-cur">
                                         <rect key="frame" x="97.5" y="2" width="89.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chat" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-Fy-76I">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NK0-3k-W5b">
                                         <rect key="frame" x="195" y="0.0" width="89.5" height="24"/>
-                                    </imageView>
+                                        <state key="normal" image="ic_chat">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-8H-fLq">
                                         <rect key="frame" x="292.5" y="2" width="89.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>

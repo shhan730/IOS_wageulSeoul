@@ -23,6 +23,14 @@ class PolicyProposalsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var commentNum: UILabel!
     
+
+    
+    @IBAction func heartbutton(_ sender: UIButton) {
+        
+    }
+    
+    
+    
     func setCell(policyProposalsInfo: PolicyProposalsInfo){
         timeStamp.text = policyProposalsInfo.timeStamp
         title.text = policyProposalsInfo.title
